@@ -1,0 +1,95 @@
+---
+layout: section
+who: Women XV
+headings:
+  - Introduction
+  - When and Where
+  - Calendar
+  - Joining
+  - Competitions and Results
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
+---
+
+- content_for :assets do
+  = javascript_include_tag("section", :defer => true)
+
+= partial "components/nav"
+.container
+  .row
+    .col-md-9.col-xs-12
+
+      = create_heading
+
+      p
+
+        | Founded in 1995, the BBRFC-Celtic Women have been a consistent
+          presence in Belgian Women’s Rugby. Highlights throughout
+          their history include winning the Triple Crown in
+          2005-2006 and becoming the Belgian Champions.
+
+      p
+
+        | We are proud to call ourselves a through-and-through
+          international team that today's team includes over a dozen
+          nationalities. We are open to players from all backgrounds
+          and levels of experience, and offer an excellent networking
+          opportunity (read social side). Club socials, pubcrawls,
+          BBQ's... lift the team spirit and give members a great
+          opportunity to socialise and network with people from all
+          over the world.
+
+
+      = create_heading
+
+      p
+
+        | Practice sessions are held every Wednesday from 20:00 -
+          22:00 and Friday from 19:00 - 21:00 at the VUB
+
+      = create_heading
+
+      .row
+        .col-sm-12.col-md-10
+
+          #calendar
+
+          .panel.panel-default.panel-calendar-sync
+            .panel-heading
+              h3.panel-title
+                i.fa.fa-calendar
+                | Sync into your favourite calendar application
+            .panel-body
+              p
+                | URL:
+                pre teamer.net/teams/788223-bbrfc-celtic-ladies/events/subscription.ics
+              a.btn.btn-default href="https://www.google.com/calendar/ical/kj81dj1fllc8uaduu9vi0s77kpdlmb20%40import.calendar.google.com/public/basic.ics" role="button"  iCal/.ics file
+              a.btn.btn-default href="webcal://teamer.net/teams/788223-bbrfc-celtic-ladies/events/subscription.ics" role="button"  Webcal link
+              a.btn.btn-default href="https://www.google.com/calendar/render?cid=kj81dj1fllc8uaduu9vi0s77kpdlmb20@import.calendar.google.com" role="button"  Google Calendar
+
+
+      = create_heading
+
+      p
+
+        | Become a part of a multi-national, multicultural team and
+          experience the fun of playing rugby! If you are interested,
+          and would like to know more, feel free to contact us at
+        a href="mailto:ladiesxv@bbrfc-celtic.be"  ladiesxv@bbrfc-celtic.be
+        | .
+
+
+      p
+        | The first 3 training sessions are entirely free - what a
+          bargain! After that or before your first match you will need
+          to hand in your registration and medical forms for insurance
+          purposes, and of course pay your registration fees.
+
+      = partial 'section-info/fees'
+
+      = create_heading
+
+      p
+        | The women's XV currently competes in National Division 2.
+
+
+    = create_nav

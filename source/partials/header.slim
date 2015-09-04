@@ -1,0 +1,24 @@
+head
+  title= page_title
+  meta content=("text/html; charset=utf-8") http-equiv="content-type" /
+  meta content="#{current_page.data.description}"  name="description" /
+  meta content=("Rugby Brussels Belgium XVs Union brusselsceltic brusselsbarbarians bbrfc-celtic") name="keywords" /
+  - if current_page.data.who == "Home"
+    meta content="l_rowiX1EAhFk1P07L9SGp0SVyojpr5-9Q9g4FHID80" name="google-site-verification"
+  meta content="width=device-width, initial-scale=1" name="viewport"
+  = favicon_tag 'favicon.ico', :type => 'image/x-icon'
+
+  = partial "loadCSS"
+
+  javascript:
+    loadCSS("/assets/css/delayed.css");
+
+  noscript
+    = stylesheet_link_tag "delayed"
+
+  /![if lte IE 8] <script src="/assets/css/ie/html5shiv.js"></script>
+
+  = stylesheet_link_tag "style"
+  = javascript_include_tag("global", :defer => true)
+
+  = yield_content :assets

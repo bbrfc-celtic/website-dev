@@ -1,0 +1,124 @@
+---
+who: Home
+layout: landing
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
+---
+
+- content_for(:assets) do
+  = javascript_include_tag("landing", :defer => true)
+
+= partial "components/nav"
+#fb-root
+#banner
+  i.fa.fa-pause.hidden-xs
+
+.container-intro
+  .jumbotron
+    .container
+      h2
+        i.fa.fa-trophy
+
+        | Brussels’ number 1 international rugby club!
+
+      p
+
+        | Welcome to the BBRFC Celtic, Brussels' most international
+          club, located in the heart of the city and with a history
+          dating back to 1968! We have three full Men's XVs squads, a
+          Women’s XV, a mixed Touch team, and our own Rugby School for
+          all ages from U6 to U19.
+
+      p
+
+        | With a great mix of international and Belgian members,
+          superb pitch and club-house centrally located in Brussels!
+
+      p
+
+        | If you are new to town, or have been here for a while, and
+          want to play the most competitive expat rugby in Brussels,
+          we are the club for you!
+
+      a.button href="/contact/"  How to find us
+  .container
+    .row
+      .col-md-4.col-xs-12.news-feed
+        header.facebook-content
+          h3 What are we up to
+          p Check out our news feed to keep up to date
+        .fb-page data-adapt-container-width="true" data-hide-cover="false" data-href="https://www.facebook.com/BBRFCCeltic" data-show-facepile="true" data-show-posts="true" data-small-header="false" data-width="500"
+          .fb-xfbml-parse-ignore
+            blockquote cite="https://www.facebook.com/BBRFCCeltic"
+              a href="https://www.facebook.com/BBRFCCeltic"  BBRFC  Celtic
+        .spinner-wrapper
+          #spinner
+      .col-md-8.col-xs-12
+        header.facebook-content
+          h3 Daily Picture Digest
+          p
+            | Come back tomorrow for more or head to our
+            a href="https://www.facebook.com/BBRFCCeltic/photos_stream" target="_blank"  albums page
+            |  if you cannot wait!
+
+        .fotorama
+.container-first
+  .container
+    header.major
+      h2 Already convinced?
+      p.lead
+        | Then turn up at one of our training sessions! Click on a
+          button below to know all the details about joining.
+      p.lead I am here for...
+    .row
+      .col-md-3.col-xs-6
+        a.button.alt href="/men/#Joining"  Men XV
+      .col-md-3.col-xs-6
+        a.button.alt href="/women/#Joining"  Women XV
+      .col-md-3.col-xs-6
+        a.button.alt href=""  School
+      .col-md-3.col-xs-6
+        a.button.alt href="/touch/#Joining"  Touch
+.container-second
+  .container
+    header.major
+      h2 The club at a glance
+      span.lead
+
+        | In case you do not want to waste your time browsing through
+          the pages of this site, these are the essential bits you
+          need to know! We make sure this information is always up to
+          date.
+
+    .row
+      .col-xs-12.col-lg-8.col-lg-offset-2
+        #calendar
+        table.table.table-responsive
+          caption
+            | Key:
+          thead
+            tr
+              th Team
+              th Coach/In charge
+              th When
+              th Colour
+          tbody
+            tr
+              td Men
+              td Michael Samuels
+              td Tue Wed Fri
+              td G
+            tr
+              td Women
+              td Ken Knuts
+              td Wed & Fri
+              td B
+            tr
+              td Touch
+              td Warren & Maria
+              td Tue Wed Fri
+              td R
+            tr
+              td School
+              td Matthijs Roukens
+              td Wed Sat
+              td NaN

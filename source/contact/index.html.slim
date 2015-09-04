@@ -1,0 +1,156 @@
+---
+layout: section
+who: Contact
+headings:
+  - Contact List
+  - Pitch
+  - Clubhouse
+  - Forms
+  - Legal Information
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
+---
+
+- content_for :assets do
+  = javascript_include_tag("section", :defer => true)
+
+
+= partial "components/nav"
+
+.container
+  .row
+
+    = create_nav
+
+    .col-md-9.col-xs-12
+
+      = create_heading
+
+      p
+
+        | All the committee members and coaches are listed here. Now
+          you can contact the appropriate person!
+
+      table.table.table-default.table-hover
+        thead
+          tr
+            th
+              | Title
+            th
+              | Name
+            th
+              | Email
+        tbody
+          tr
+            td President
+            td Graham Edwards
+            td
+              a href="mailto:john@doe.com"  john@doe.com
+          tr
+            td Secretary
+            td Olivier Costa
+            td
+              a john@doe.com
+          tr
+            td Treasurer
+            td Erik Boman
+            td
+              a john@doe.com
+          tr
+            td Men XV Coach
+            td Michael Samuels
+            td
+              a john@doe.com
+          tr
+            td Men XV Rep
+            td Yann Sterckx
+            td
+              a john@doe.com
+          tr
+            td Women XV Coach
+            td Ken Knuts
+            td
+              a john@doe.com
+          tr
+            td Women XV Rep
+            td Marine Marx
+            td
+              a john@doe.com
+          tr
+            td Touch Rep
+            td Warrent Kint & Maria Chiara
+            td
+              a john@doe.com
+          tr
+            td Rugby School Director
+            td Matthijs Roukens
+            td
+              a john@doe.com
+          tr
+            td Marketing Communications
+            td Carlos Requena
+            td
+              a john@doe.com
+          tr
+            td Procurement Manager
+            td James O Brien
+            td
+              a john@doe.com
+          tr
+            td Social Events
+            td Ulli Fikar
+            td
+              a john@doe.com
+
+      = create_heading
+
+      iframe allowfullscreen="" frameborder="0" height="500px" src="https://www.google.com/maps/embed/v1/place?q=BBRFC+Celtic+Rugby+Club,+Boulevard+du+Triomphe,+Ixelles,+Belgium&key=AIzaSyBU2T9PaAWLTUyi9N_nKeKaJ8QUcxC85ZI" style="border:0" width="100%"
+
+      = create_heading
+
+      p
+
+        ' Our club house - Ruck 'n Maul - is located at
+
+        a href="https://www.google.nl/maps/dir/BBRFC+Celtic+Rugby+Club,+Boulevard+du+Triomphe,+Ixelles,+Belgium/Ruck+'n+Maul,+Boulevard+du+Triomphe,+Brussels,+Belgium/@50.8241759,4.3957296,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c3c4c85a52b171:0xd3506ef3c38e09d1!2m2!1d4.3944442!2d50.8233935!1m5!1m1!1s0x47c3c4ca24b5330f:0x5680385e24261fff!2m2!1d4.3993217!2d50.8235959!3e2?hl=en" Triomflaan 52, 1160 Auderghem
+
+        '  right across the street. There you will find live rugby,
+          good food, free wifi, a pool table, karaoke & a friendly
+          atmosphere. It is run by rugby players for rugby & sports
+          enthusiasts. You can check more info about it
+
+        a href="https://www.facebook.com/RUCKandMAUL" here
+
+        | .
+
+
+      = create_heading
+
+      p All the forms you possibly need are located here:
+
+      .well
+        p Forms
+
+      = create_heading
+
+      ul.fa-ul
+        li
+          i.fa.fa-li.fa-fax
+          | Fax: +32 2 415 9400
+        li
+          i.fa.fa-li.fa-legal
+          | Company No.: 0859.668.438
+        li
+          i.fa.fa-li.fa-money
+          | KBC Bank account No.: 735-0368845-39
+          ul
+            li IBAN: BE13 7350 3688 4539
+            li BIC: KREDBEBB
+        li
+          i.fa.fa-li.fa-photo
+          ' Logo (in several formats):
+        .btn-group
+          a.btn.btn-default href="/assets/static/logo.ai" role="button" AI
+          a.btn.btn-default href="/assets/static/logo.eps" role="button" EPS
+          a.btn.btn-default href="/assets/static/logo.svg" role="button" SVG
+          a.btn.btn-default href="/assets/static/logo.pdf" role="button" PDF
+          a.btn.btn-default.btn-info href="/assets/static/logo.png" role="button" PNG

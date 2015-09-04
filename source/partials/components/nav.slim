@@ -1,0 +1,31 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container.nav-container
+    .navbar-header
+      button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="/"  BBRFC Celtic
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        = nav_link "Home", "/"
+        = nav_link "Men XV", "/men/"
+        = nav_link 'Women XV', '/women/'
+        = nav_link 'Touch', '/touch/'
+        = nav_link 'School', ''
+        = nav_link 'Contact', '/contact/'
+        li.dropdown
+          a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+            | More
+            i.fa.fa-caret-down
+          ul.dropdown-menu
+            li.dropdown-header Club History
+            = nav_link 'Brussels Barbarians', ''
+            = nav_link 'Brussels Celtic', ''
+            = nav_link 'Amalgamation', ''
+            = nav_link 'Patrons', ''
+            li.divider role="separator"
+            li.dropdown-header Social
+            = nav_link 'Social Side', ''
+            = nav_link 'Vice Presidents', ''

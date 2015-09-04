@@ -1,0 +1,113 @@
+#+TITLE: BBRFC Celtic Website Documentation
+#+AUTHOR: Carlos Requena
+
+* Goal of the project
+
+To create a no-bullshit-attractive-static-HTML-website and give the
+impression there is some "dynamic" content in it. Cleanliness and
+clarity are important.
+
+* Tools used / dependencies
+
+** Content generation and template system, building the website
+
+   [Middleman](https://middlemanapp.com/) (a Ruby static site
+   generator) using [Slim](http://slim-lang.com/) as a template
+   engine.
+
+   There are some helpers defined in ~config.rb~ like ~nav_link~,
+   ~file_link~, ~create_heading~ and ~page_title~ that help when
+   writing the markup.
+
+   Others are provided by the [Padrino
+   framework](http://www.padrinorb.com/).
+
+** Responsiveness
+
+   Bootstrap framework (v3.3.5) - http://getbootstrap.com. CSS (grid,
+   panel, forms, nav, navbar...) and JS (scrollspy.js, affix.js).
+
+** Dependency manager
+
+   RubyGems are all provided in the Gemfile to use with Bundler.
+
+   Rakefile to execute simple tasks is available too.
+
+** Stylesheets
+
+   Sass files are automatically generated, the main Sass file is
+   located at: ~assets/css/style.sass~, and it uses partials (with
+   ~@import~) from the same folder and other gems (like
+   bootstrap). Compiles to ~assets/css/style.css~, which is
+   compressed.
+
+   Another stylesheet - ~assets/css/delayed.sass~ - is loaded after
+   the document is ready, to reduce the amount of unnecessary data for
+   the above-the-fold content
+
+** Documentation
+
+   OPTIONAL: Emacs Org mode - to generate docs
+   (~README.md~). Otherwise just edit markdown.
+
+* Previewing, simple install
+
+  First two things are bundler and rake. Install all dependencies with
+  ~bundle install~.
+
+  Then run:
+
+  ~rake preview~ or ~middleman server~.
+
+  The site should be available at:
+
+  ~localhost:4567/~
+
+* "/Dynamic content/"
+
+  Files in the partials folder mainly. Generated with PHP scripts
+  (using Facebook Graph API) elsewhere and pushed with a Machine User
+  every X minutes using cron.
+
+  It will generate:
+
+  1. A number of ~<img>~ tags (10) with random pictures, to use with a
+     gallery in the landing page.
+  2. A JSON object containing all Facebook events, stored in a
+     variable in a ~.js~ file (for simplicity and so Sprockets can
+     require it)
+  3. Updated league tables with scores, to include in the different
+     sections.
+
+
+  Events that Fullcalendar shows that are not on Facebook are updated
+  on the fly with Ajax.
+
+  A Facebook page plugin is also used in the landing page. This is a
+  simplified version of the original one, which was built from scratch
+  using the Facebook Graph API, and is more convenient. This one, and
+  the fotorama gallery are loaded only when the user scrolls past a
+  certain point, to avoid having to load it at the beginning.
+
+* Other "patches"
+
+  Contact forms supported by Formspree - although a good idea - are
+  dropped for the moment due to the lack of a clear Privacy Policy. A
+  contact list is provided instead.
+
+* Known issues
+
+* Possible problems
+
+Automatically pushing "dynamic content" with the Machine User could
+break the page or have unintended results.
+
+* Improvements
+
+  - Include PHP scripts in this repo or submodule.
+  - Using the Google Maps API, create a nice map showing where all
+    members come from, extracting info using the Facebook Graph
+    API. Then link it to string: "most international rugby club".
+  - Middleman multi lang plugin
+  - Related to above: user ~data~ folder more. Read middleman docs on
+    it.

@@ -1,0 +1,7 @@
+doctype html
+html lang = "en"
+  = partial "header"
+  body style="position: relative" data={spy: "scroll", target: "#myScrollSpy", offset: "100"}
+    = yield
+    = partial "components/sponsors"
+    = partial "components/footer"

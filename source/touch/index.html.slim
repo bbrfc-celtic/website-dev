@@ -1,0 +1,101 @@
+---
+layout: section
+who: Touch
+headings:
+  - Introduction
+  - When and Where
+  - Calendar
+  - Joining
+  - Competitions and Results
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
+---
+
+- content_for :assets do
+  = javascript_include_tag("section", :defer => true)
+
+
+= partial "components/nav"
+.container
+  .row
+    .col-md-9.col-xs-12
+
+      = create_heading
+
+      p
+
+        | BBRFC Celtic Touch was conceived in 2005 (when the club
+          was called Brussels Celtic Touch). since then we have grown
+          into a major part of the club and have a great turn out to
+          our twice weekly training sessions.
+
+      p
+
+        | Our training sessions are light hearted with emphasis on
+          game play complemented by some ball handling and skills.  We
+          have a wide range of abilities and ages and are always keen
+          to welcome new players, regardless of experience.
+
+      = create_heading
+
+
+
+
+      = create_heading
+
+      .row
+        .col-sm-12.col-md-10
+          #calendar
+          .panel.panel-default.panel-calendar-sync
+            .panel-heading
+              h3.panel-title
+                i.fa.fa-calendar
+                | Sync into your favourite calendar application
+            .panel-body
+              p
+                | ID:
+                pre rqvfi5889grtqnojljp600serk@group.calendar.google.com
+              a.btn.btn-default href="https://www.google.com/calendar/ical/rqvfi5889grtqnojljp600serk%40group.calendar.google.com/public/basic.ics" role="button"  iCal/.ics file
+              a.btn.btn-default href="webcal://google.com/calendar/ical/rqvfi5889grtqnojljp600serk%40group.calendar.google.com/public/basic.ics" role="button"  Webcal link
+              a.btn.btn-default href="https://www.google.com/calendar/render?cid=rqvfi5889grtqnojljp600serk@group.calendar.google.com" role="button"  Google Calendar
+
+      = create_heading
+
+      p
+
+        ' The first 3 training sessions for touch are free - just turn
+          up at the pitch and introduce yourself but you may want to
+          send a quick email to
+
+        a href="touch@bbrfc-celtic.be"touch@bbrfc-celtic.be
+
+        |  to confirm that you will be attending. If, after the 3 free
+          sessions, you would like to continue with us you will then
+          need to turn up to your 4th session with the fees paid to
+          our bank account!
+
+      p
+
+        ' We have a mailing list for club announcements (including
+          training cancellation etc). To join, send an email to
+
+        a href="brusselsceltictouch-subscribe@yahoogroups.com"brusselsceltictouch-subscribe@yahoogroups.com
+
+        |  - you will get an email confirmation request from Yahoo
+          Groups, simply reply to the mail (option 2) to confirm
+          your email address - this avoids having to create a yahoo
+          account.
+
+      p
+
+        | When you sign up to be a member of the Touch mailing list
+          your e-mail address will also be passed on to Touch Belgium
+          so that you receive news and updates on Touch Belgium
+          events.
+
+      = partial 'section-info/touch-fees'
+
+      = create_heading
+
+      p Touch tournaments
+
+    = create_nav

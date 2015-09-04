@@ -1,0 +1,104 @@
+---
+layout: section
+who: Men XV
+headings:
+  - When and Where
+  - Calendar
+  - Joining
+  - Competitions and Results
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
+---
+
+- content_for :assets do
+  = javascript_include_tag("section", :defer => true)
+
+
+= partial "components/nav"
+.container
+  .row
+    .col-md-9.col-xs-12
+
+      = create_heading
+
+      p
+
+        | During the regular season, September through May, trainings
+          are held on Tuesdays from 18:30 to 20:30, and Wednesday and
+          Friday evenings from 19:45 to 22:00 at the rugby pitch at
+          the VUB. Note that this is an artificial grass pitch, and
+          metal studs are not allowed (plastic studs are OK).
+
+      p
+
+        | We play matches on most Sundays, and in addition to our
+          season-long competitions, we also organize friendly matches
+          with both Belgian and touring teams from the UK,
+          Netherlands, France, Spain and beyond.
+
+      p
+
+        | During the summer we also occasionally play 7s and may have
+          random rugby training sessions in various spots. Many
+          players also train and play with the Touch team as well
+          during the off season. Please note that the only breaks in
+          training are for major and national holidays.
+
+      = create_heading
+
+      .row
+        .col-sm-12.col-md-10
+          #calendar
+          .panel.panel-default.panel-calendar-sync
+            .panel-heading
+              h3.panel-title
+                i.fa.fa-calendar
+                | Sync into your favourite calendar application
+            .panel-body
+              p
+                | URL:
+                pre https://app.teamingly.com/feeds/schedule/?t=TQXDODD&c=X6MLMW6
+              a.btn.btn-default href="https://app.teamingly.com/feeds/schedule/?t=TQXDODD&c=X6MLMW6" role="button"  iCal/.ics file
+              a.btn.btn-default href="webcal://app.teamingly.com/feeds/schedule/?t=TQXDODD&c=X6MLMW6" role="button"  Webcal link
+              a.btn.btn-default href="https://www.google.com/calendar/render?cid=8fq7eo5a737651vubupdknf41omd44j2@import.calendar.google.com" role="button"  Google Calendar
+
+      = create_heading
+
+      p
+
+        | We welcome all ages and levels of ability to our club. To
+          join, simply come down to training on Tuesday, Wednesday or
+          Friday and introduce yourself. Even better, you can send us
+          a message on Facebook or email us (using the details listed
+          in the contact tab) beforehand to let us know you’re coming.
+
+      p
+
+        | The first 3 training sessions are entirely free - what a
+          bargain! After that or before your first match you will need
+          to hand in your registration and medical forms for insurance
+          purposes, and of course pay your registration fees.
+
+      = partial 'section-info/fees'
+
+      = create_heading
+
+      p
+
+        | BBRFC Celtic Mens XV teams take part in three different
+          competitions. These tables show the current results for the
+          ongoing season <strong>2015-2016</strong>.  They are fetched
+          automatically from the official sources Fédération Belge de
+          Rugby (FBRB) and Vlaamse Rugby Bond (VRB).
+
+      h4 1st XV - National League Div 3
+      p
+        | There are no official results available from the FBRB yet.
+
+      h4 2nd XV - Flemish Regional League 1
+      = partial 'dynamic/regional-league-1.html'
+
+      h4 3rd XV "BC Expendables" - Flemish Regional League 2A
+      = partial 'dynamic/regional-league-2.html'
+
+
+    = create_nav

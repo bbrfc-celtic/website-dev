@@ -1,0 +1,135 @@
+.panel.panel-default
+  .panel-heading
+    h3.panel-title
+      i.fa.fa-file-pdf-o style=("padding-right: 1em")
+      | Forms and fees
+  .panel-body
+    .btn-group aria-label=("Registration Form") role="group"
+      a.btn.btn-default href="" role="button"  Registration form
+      a.btn.btn-default href="" role="button"  Sample filled in
+    .btn-group aria-label=("Medical Form") role="group"
+      a.btn.btn-default href="" role="button"  Medical form
+      a.btn.btn-default href="" role="button"  Sample filled in
+    hr/
+    .btn-group aria-label=("Tranfer form") role="group"
+      a.btn.btn-default href="" role="button"  Transfer form
+    span style=("font-size: 0.9em")  - If you come from another Belgian club
+    hr/
+    table.table.table-bordered.table-condensed
+      thead
+        tr
+          th
+          th Standard
+          th Reduced
+      tbody
+        tr
+          td Full season
+          td &euro; 190
+          td &euro; 110
+        tr
+          td Half season
+          td &euro; 110
+          td &euro; 110
+    p The reduced fee is applicable to students, stagiares and unemployed.
+.panel.panel-info
+  .panel-heading
+    h3.panel-title
+      i.fa.fa-info-circle style=("padding-right: 1em")
+      | Account number and details
+  .panel-body
+    ul
+      li BBRFC Celtic RFC vzw
+      li Account Number: 735-0368845-39
+      li IBAN: BE13 7350 3688 4539
+      li BIC: KREDBEBB
+    | Please add as a communication:
+    pre
+
+      | #{current_page.data.who} - 'Player Name' - 'Type of fee'
+
+.panel.panel-warning
+  .panel-heading
+    h3.panel-title
+      i.fa.fa-eye style=("padding-right: 1em")
+      | Payment policy!
+  .panel-body
+    p
+
+      | We have a strict policy regarding the fee payment. No player
+        is <strong>to play or be registered</strong> until the fee has
+        been paid. The latter is considered outstanding if not settled
+        by the end of September. After that, a &euro;10 increase will
+        be applied.
+
+
+/ <div class="panel panel-default">
+/    <div class="panel-heading">
+/       <h3 class="panel-title"><i class="fa fa-file-pdf-o"  style="padding-right: 1em"></i>Forms and fees</h3>
+/    </div>
+/    <div class="panel-body">
+/       <div class="btn-group" role="group" aria-label="Registration Form">
+/ 	 <a class="btn btn-default" role="button" href="">Registration form</a>
+/ 	 <a class="btn btn-default" role="button" href="">Sample filled in</a>
+/       </div>
+/       <div class="btn-group" role="group" aria-label="Medical Form">
+/ 	 <a class="btn btn-default" role="button" href="">Medical form</a>
+/ 	 <a class="btn btn-default" role="button" href="">Sample filled in</a>
+/       </div>
+/       <hr>
+/       <div class="btn-group" role="group" aria-label="Tranfer form">
+/ 	 <a class="btn btn-default" role="button" href="">Transfer form</a>
+/       </div> <span style="font-size: 0.9em">- If you come from another Belgian club</span>
+/       <hr>
+/       <table class="table table-bordered table-condensed">
+/ 	 <thead>
+/ 	    <tr>
+/ 	       <th></th>
+/ 	       <th>Standard</th>
+/ 	       <th>Reduced</th>
+/ 	    </tr>
+/ 	 </thead>
+/ 	 <tbody>
+/ 	    <tr>
+/ 	       <td>Full season</td>
+/ 	       <td>&euro; 190</td>
+/ 	       <td>&euro; 110</td>
+/ 	    </tr>
+/ 	    <tr>
+/ 	       <td>Half season</td>
+/ 	       <td>&euro; 110</td>
+/ 	       <td>&euro; 110</td>
+/ 	    </tr>
+/ 	 </tbody>
+/       </table>
+/       <p>The reduced fee is applicable to students, stagiares and unemployed.</p>
+/    </div>
+/ </div>
+/ <div class="panel panel-info">
+/    <div class="panel-heading">
+/       <h3 class="panel-title"><i class="fa fa-info-circle"  style="padding-right: 1em"></i>Account number and details</h3>
+/    </div>
+/    <div class="panel-body">
+/       <ul>
+/ 	 <li>BBRFC Celtic RFC vzw</li>
+/ 	 <li>Account Number: 735-0368845-39</li>
+/ 	 <li>IBAN: BE13 7350 3688 4539</li>
+/ 	 <li>BIC: KREDBEBB</li>
+/       </ul>
+/       Please add as a communication:
+/       <pre>{{ page.who}} - 'Player Name' - 'Type of fee'</pre>
+/    </div>
+/ </div>
+
+/ <div class="panel panel-warning">
+/    <div class="panel-heading">
+/       <h3 class="panel-title"><i class="fa fa-eye"  style="padding-right: 1em"></i>Payment policy!</h3>
+/    </div>
+/    <div class="panel-body">
+/       <p>We have a strict policy regarding the fee payment. No
+/ 	 player is <strong>to play or be registered</strong> until
+/ 	 the fee has been paid. The latter is considered
+/ 	 outstanding if not settled by the end of
+/ 	 September. After that, a &euro;10 increase will be
+/ 	 applied.</p>
+/    </div>
+/ </div>
