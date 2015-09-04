@@ -145,5 +145,5 @@ break the page or have unintended results.
   - Make use of Middleman's i18n feature and translate the content to
     Dutch and French.
 
-  - Related to above: user ~data~ folder more. Read middleman docs on
+  - Related to above: use ~data~ folder for different purposes. Read middleman docs on
     it.
