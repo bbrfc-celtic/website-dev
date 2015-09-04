@@ -23,13 +23,13 @@ jQuery( document ).ready(function( $ ) {
   // Men calendars
   var menCalendars = {
     googleCalendarId: '8fq7eo5a737651vubupdknf41omd44j2@import.calendar.google.com',
-    color: "#00994C"
+    color: "#00994c"
   };
 
   // Touch calendars
   var touchCalendars = {
     googleCalendarId: 'rqvfi5889grtqnojljp600serk@group.calendar.google.com',
-    color: "#d9272d"
+    color: "#ce0000"
   };
 
   // Women calendars
@@ -40,6 +40,7 @@ jQuery( document ).ready(function( $ ) {
 
   // School calendars
   var schoolCalendars = {};
+  /* Make it orange! */
 
   // All calendars
   var allCalendars = [clubCalendar, menCalendars, touchCalendars, womenCalendars, schoolCalendars];

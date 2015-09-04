@@ -1,4 +1,6 @@
-# ~/.ssh/config needs to be configured
+# ~/.ssh/config needs to be configured first for Host 'test. A symlink
+# should also be set in the server linking ~/html/ and /var/www/ or
+# whatever the folder to serve files from is.
 SSH_HOST = 'test'
 SSH_DIR  = 'html'
 
@@ -20,13 +22,14 @@ task :preview do
   system("middleman")
 end
 
+# To deploy to Github Pages use the middleman-deploy gem instead!
 desc "Deploy website via rsync"
-task :deploy do
+task :deploy_droplet do
   puts "## Deploying website via rsync to #{SSH_HOST}"
   status = system("rsync -avze 'ssh' --delete build/ #{SSH_HOST}:#{SSH_DIR}")
   puts status ? "OK" : "FAILED"
 end
 
-desc "Build and deploy website"
-task :gen_deploy => [:build, :docs, :deploy] do
+desc "Build and deploy website to test server"
+task :gen_deploy => [:build, :docs, :deploy_droplet] do
 end

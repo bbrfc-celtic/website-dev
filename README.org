@@ -22,6 +22,18 @@ clarity are important.
    Others are provided by the [Padrino
    framework](http://www.padrinorb.com/).
 
+** Deployment
+
+   The website can be deployed either by running ~rake
+   deploy_droplet~, if an own server is configured beforehand or
+   ~middleman deploy~, to deploy to GitHub pages, using the
+   ~middleman-deploy~ gem.
+
+   When using the middleman method, the ~/build~ directory is pushed
+   to another repo, that is 'GitHub Pages enabled'.
+
+   More information can be found in the Rakefile or config.rb respectively.
+
 ** Responsiveness
 
    Bootstrap framework (v3.3.5) - http://getbootstrap.com. CSS (grid,
@@ -79,7 +91,6 @@ clarity are important.
   3. Updated league tables with scores, to include in the different
      sections.
 
-
   Events that Fullcalendar shows that are not on Facebook are updated
   on the fly with Ajax.
 
@@ -97,6 +108,8 @@ clarity are important.
 
 * Known issues
 
+
+
 * Possible problems
 
 Automatically pushing "dynamic content" with the Machine User could
@@ -105,9 +118,17 @@ break the page or have unintended results.
 * Improvements
 
   - Include PHP scripts in this repo or submodule.
+
   - Using the Google Maps API, create a nice map showing where all
     members come from, extracting info using the Facebook Graph
     API. Then link it to string: "most international rugby club".
-  - Middleman multi lang plugin
+
+  - Make use of the blogging feature to make the website feel even
+    more 'alive' (who is going to be in charge of writing
+    posts/news/updates?)
+
+  - Make use of Middleman's i18n feature and translate the content to
+    Dutch and French.
+
   - Related to above: user ~data~ folder more. Read middleman docs on
     it.

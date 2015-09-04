@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.4.0"
 gem "middleman-sprockets"
 gem "middleman-minify-html"
+gem "middleman-deploy"
 gem "slim"
 gem "uglifier"
 

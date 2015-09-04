@@ -6,10 +6,11 @@
 <li><a href="#sec-2">2. Tools used / dependencies</a>
 <ul>
 <li><a href="#sec-2-1">2.1. Content generation and template system, building the website</a></li>
-<li><a href="#sec-2-2">2.2. Responsiveness</a></li>
-<li><a href="#sec-2-3">2.3. Dependency manager</a></li>
-<li><a href="#sec-2-4">2.4. Stylesheets</a></li>
-<li><a href="#sec-2-5">2.5. Documentation</a></li>
+<li><a href="#sec-2-2">2.2. Deployment</a></li>
+<li><a href="#sec-2-3">2.3. Responsiveness</a></li>
+<li><a href="#sec-2-4">2.4. Dependency manager</a></li>
+<li><a href="#sec-2-5">2.5. Stylesheets</a></li>
+<li><a href="#sec-2-6">2.6. Documentation</a></li>
 </ul>
 </li>
 <li><a href="#sec-3">3. Previewing, simple install</a></li>
@@ -44,18 +45,30 @@ writing the markup.
 Others are provided by the [Padrino
 framework](<http://www.padrinorb.com/>).
 
-## Responsiveness<a id="sec-2-2" name="sec-2-2"></a>
+## Deployment<a id="sec-2-2" name="sec-2-2"></a>
+
+The website can be deployed either by running `rake
+   deploy_droplet`, if an own server is configured beforehand or
+`middleman deploy`, to deploy to GitHub pages, using the
+`middleman-deploy` gem.
+
+When using the middleman method, the `/build` directory is pushed
+to another repo, that is 'GitHub Pages enabled'.
+
+More information can be found in the Rakefile or config.rb respectively.
+
+## Responsiveness<a id="sec-2-3" name="sec-2-3"></a>
 
 Bootstrap framework (v3.3.5) - <http://getbootstrap.com>. CSS (grid,
 panel, forms, nav, navbar&#x2026;) and JS (scrollspy.js, affix.js).
 
-## Dependency manager<a id="sec-2-3" name="sec-2-3"></a>
+## Dependency manager<a id="sec-2-4" name="sec-2-4"></a>
 
 RubyGems are all provided in the Gemfile to use with Bundler.
 
 Rakefile to execute simple tasks is available too.
 
-## Stylesheets<a id="sec-2-4" name="sec-2-4"></a>
+## Stylesheets<a id="sec-2-5" name="sec-2-5"></a>
 
 Sass files are automatically generated, the main Sass file is
 located at: `assets/css/style.sass`, and it uses partials (with
@@ -67,7 +80,7 @@ Another stylesheet - `assets/css/delayed.sass` - is loaded after
 the document is ready, to reduce the amount of unnecessary data for
 the above-the-fold content
 
-## Documentation<a id="sec-2-5" name="sec-2-5"></a>
+## Documentation<a id="sec-2-6" name="sec-2-6"></a>
 
 OPTIONAL: Emacs Org mode - to generate docs
 (`README.md`). Otherwise just edit markdown.
@@ -126,9 +139,17 @@ break the page or have unintended results.
 # Improvements<a id="sec-8" name="sec-8"></a>
 
 -   Include PHP scripts in this repo or submodule.
+
 -   Using the Google Maps API, create a nice map showing where all
     members come from, extracting info using the Facebook Graph
     API. Then link it to string: "most international rugby club".
--   Middleman multi lang plugin
+
+-   Make use of the blogging feature to make the website feel even
+    more 'alive' (who is going to be in charge of writing
+    posts/news/updates?)
+
+-   Make use of Middleman's i18n feature and translate the content to
+    Dutch and French.
+
 -   Related to above: user `data` folder more. Read middleman docs on
     it.
