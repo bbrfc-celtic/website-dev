@@ -3,14 +3,21 @@
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. Goal of the project</a></li>
-<li><a href="#sec-2">2. Tools used / dependencies</a>
+<li><a href="#sec-2">2. What tools does it use?</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Content generation and template system, building the website</a></li>
-<li><a href="#sec-2-2">2.2. Deployment</a></li>
-<li><a href="#sec-2-3">2.3. Responsiveness</a></li>
-<li><a href="#sec-2-4">2.4. Dependency manager</a></li>
-<li><a href="#sec-2-5">2.5. Stylesheets</a></li>
-<li><a href="#sec-2-6">2.6. Documentation</a></li>
+<li><a href="#sec-2-1">2.1. Content generation and template system, building the website</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1. Deployment</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2. Dependency manager</a></li>
+<li><a href="#sec-2-3">2.3. Stylesheets</a>
+<ul>
+<li><a href="#sec-2-3-1">2.3.1. Responsiveness</a></li>
+<li><a href="#sec-2-3-2">2.3.2. Sponsors images = spriting with Compass</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-4">2.4. Documentation</a></li>
 </ul>
 </li>
 <li><a href="#sec-3">3. Previewing, simple install</a></li>
@@ -30,7 +37,7 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-# Tools used / dependencies<a id="sec-2" name="sec-2"></a>
+# What tools does it use?<a id="sec-2" name="sec-2"></a>
 
 ## Content generation and template system, building the website<a id="sec-2-1" name="sec-2-1"></a>
 
@@ -45,7 +52,7 @@ writing the markup.
 Others are provided by the [Padrino
 framework](<http://www.padrinorb.com/>).
 
-## Deployment<a id="sec-2-2" name="sec-2-2"></a>
+### Deployment<a id="sec-2-1-1" name="sec-2-1-1"></a>
 
 The website can be deployed either by running `rake
    deploy_droplet`, if an own server is configured beforehand or
@@ -57,22 +64,21 @@ to another repo, that is 'GitHub Pages enabled'.
 
 More information can be found in the Rakefile or config.rb respectively.
 
-## Responsiveness<a id="sec-2-3" name="sec-2-3"></a>
-
-Bootstrap framework (v3.3.5) - <http://getbootstrap.com>. CSS (grid,
-panel, forms, nav, navbar&#x2026;) and JS (scrollspy.js, affix.js).
-
-## Dependency manager<a id="sec-2-4" name="sec-2-4"></a>
+## Dependency manager<a id="sec-2-2" name="sec-2-2"></a>
 
 RubyGems are all provided in the Gemfile to use with Bundler.
 
+[Sprockets](<https://github.com/sstephenson/sprockets>) is used to
+manage JS assets mainly. It concatenates and uglifies all the
+necessary files. The latter are 'imported' with `//= require`
+
 Rakefile to execute simple tasks is available too.
 
-## Stylesheets<a id="sec-2-5" name="sec-2-5"></a>
+## Stylesheets<a id="sec-2-3" name="sec-2-3"></a>
 
 Sass files are automatically generated, the main Sass file is
 located at: `assets/css/style.sass`, and it uses partials (with
-`@import`) from the same folder and other gems (like
+`@import`, not Sprockets!) from the same folder and other gems (like
 bootstrap). Compiles to `assets/css/style.css`, which is
 compressed.
 
@@ -80,7 +86,22 @@ Another stylesheet - `assets/css/delayed.sass` - is loaded after
 the document is ready, to reduce the amount of unnecessary data for
 the above-the-fold content
 
-## Documentation<a id="sec-2-6" name="sec-2-6"></a>
+### Responsiveness<a id="sec-2-3-1" name="sec-2-3-1"></a>
+
+Bootstrap framework (v3.3.5) - <http://getbootstrap.com>. CSS (grid,
+panel, forms, nav, navbar&#x2026;) and JS (scrollspy.js, affix.js).
+
+### Sponsors images = spriting with Compass<a id="sec-2-3-2" name="sec-2-3-2"></a>
+
+All sponsor images are put in a folder which is then passed to
+Compass to generate the sprite PNG and the necessary CSS. This
+process is automatic and makes it very simple to just add or
+remove sponsors when needed.
+
+The images are then put in a kind of 'masonry' layout, which does
+not look too bad.
+
+## Documentation<a id="sec-2-4" name="sec-2-4"></a>
 
 OPTIONAL: Emacs Org mode - to generate docs
 (`README.md`). Otherwise just edit markdown.
