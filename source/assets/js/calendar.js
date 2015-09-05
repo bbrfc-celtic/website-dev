@@ -100,4 +100,8 @@ jQuery( document ).ready(function( $ ) {
       },
     },
   });
+
+  $(".rotation").tooltip({
+    title: "Rotation every 2 weeks"
+  });
 });
