@@ -20,7 +20,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    autoprefixer-rails (5.2.1.3)
+    autoprefixer-rails (6.0.1)
       execjs
       json
     backstretch-rails (2.0.4)
@@ -96,6 +96,8 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-alias (0.0.12)
+      middleman-core (~> 3.2)
     middleman-core (3.4.0)
       activesupport (~> 4.1)
       bundler (~> 1.1)
@@ -203,6 +205,7 @@ DEPENDENCIES
   fullcalendar-rails
   jquery-rails
   middleman (~> 3.4.0)
+  middleman-alias
   middleman-deploy
   middleman-livereload (~> 3.1.0)
   middleman-minify-html

@@ -1,6 +1,5 @@
 doctype html
 html lang="en"
-  = partial header
-  body
+  = partial "header"
+  body.error
     = yield
-    = partial "components/footer"

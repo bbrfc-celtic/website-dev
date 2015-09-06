@@ -26,3 +26,4 @@ gem "backstretch-rails", :require => false
 gem "momentjs-rails", :require => false
 gem "fullcalendar-rails", :require => false
 gem "fotoramajs", :require => false
+gem "middleman-alias"

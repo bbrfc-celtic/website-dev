@@ -9,15 +9,6 @@ compass_config do |config|
 end
 
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  # Optional Settings
-  deploy.remote   = 'git@github.com:bbrfc-celtic/bbrfc-celtic.github.io.git'
-  deploy.branch   = 'master' # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-  # =>  deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
-end
-
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -48,13 +39,8 @@ activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 # configure :development do
-
 #   activate :livereload
 # end
-
-# activate :sprockets
-# activate :gzip
-
 
 # Methods defined in the helpers block are available in templates
 helpers do
@@ -111,6 +97,7 @@ set :fonts_dir, "assets/fonts"
 set :images_dir, "assets/img"
 set :partials_dir, "partials"
 
+
 sprockets.append_path 'partials/dynamic/'
 
 # Build-specific configuration
@@ -122,7 +109,7 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
   set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
-
+  activate :alias
   # Enable cache buster
   # activate :asset_hash
 
@@ -132,3 +119,13 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  deploy.remote   = 'git@github.com:bbrfc-celtic/bbrfc-celtic.github.io.git'
+  deploy.branch   = 'master' # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  # =>  deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
+activate :alias
