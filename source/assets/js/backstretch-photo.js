@@ -1,11 +1,19 @@
 $(document).ready(function() {
 
+  function shuffle(o) {
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  };
+  var originalPhotos = [
+    "assets/img/banner-men.jpg",
+    "assets/img/banner-ladies.jpg",
+    "assets/img/banner-touch.jpg"
+  ];
+
+  /* Pictures are shuffled on refresh, so sections do not complain one
+  particular photo is always the first one to show on screen */
   function activation() {
-    $('div#banner').backstretch([
-      "assets/img/banner-men.jpg",
-      "assets/img/banner-ladies.jpg",
-      "assets/img/banner-touch.jpg"
-    ], {duration: 2500, fade: 750});
+    $('div#banner').backstretch(shuffle(originalPhotos), {duration: 2500, fade: 750});
   }
 
   function checkOnResize() {

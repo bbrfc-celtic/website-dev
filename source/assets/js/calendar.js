@@ -1,4 +1,4 @@
-//= require facebook-events.js
+//= require facebook-events
 
 jQuery( document ).ready(function( $ ) {
   // Function to decide which calendar to show

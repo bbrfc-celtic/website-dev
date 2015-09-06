@@ -3,29 +3,36 @@
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. Goal of the project</a></li>
-<li><a href="#sec-2">2. What tools does it use?</a>
+<li><a href="#sec-2">2. Main features</a>
 <ul>
-<li><a href="#sec-2-1">2.1. Content generation and template system, building the website</a>
-<ul>
-<li><a href="#sec-2-1-1">2.1.1. Deployment</a></li>
+<li><a href="#sec-2-1">2.1. Landing page</a></li>
+<li><a href="#sec-2-2">2.2. Each section</a></li>
+<li><a href="#sec-2-3">2.3. 'More' section</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-2">2.2. Dependency manager</a></li>
-<li><a href="#sec-2-3">2.3. Stylesheets</a>
+<li><a href="#sec-3">3. What tools does it use?</a>
 <ul>
-<li><a href="#sec-2-3-1">2.3.1. Responsiveness</a></li>
-<li><a href="#sec-2-3-2">2.3.2. Sponsors images = spriting with Compass</a></li>
+<li><a href="#sec-3-1">3.1. Content generation and template system, building the website</a>
+<ul>
+<li><a href="#sec-3-1-1">3.1.1. Deployment</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-4">2.4. Documentation</a></li>
+<li><a href="#sec-3-2">3.2. Dependency manager</a></li>
+<li><a href="#sec-3-3">3.3. Stylesheets</a>
+<ul>
+<li><a href="#sec-3-3-1">3.3.1. Responsiveness</a></li>
+<li><a href="#sec-3-3-2">3.3.2. Sponsors images = spriting with Compass</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Previewing, simple install</a></li>
-<li><a href="#sec-4">4. "<i>Dynamic content</i>"</a></li>
-<li><a href="#sec-5">5. Other "patches"</a></li>
-<li><a href="#sec-6">6. Known issues</a></li>
-<li><a href="#sec-7">7. Possible problems</a></li>
-<li><a href="#sec-8">8. Improvements</a></li>
+<li><a href="#sec-3-4">3.4. Documentation</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Previewing, simple install</a></li>
+<li><a href="#sec-5">5. "<i>Dynamic content</i>"</a></li>
+<li><a href="#sec-6">6. Other "patches"</a></li>
+<li><a href="#sec-7">7. Known issues</a></li>
+<li><a href="#sec-8">8. Possible problems</a></li>
+<li><a href="#sec-9">9. Improvements</a></li>
 </ul>
 </div>
 </div>
@@ -37,9 +44,38 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-# What tools does it use?<a id="sec-2" name="sec-2"></a>
+# Main features<a id="sec-2" name="sec-2"></a>
 
-## Content generation and template system, building the website<a id="sec-2-1" name="sec-2-1"></a>
+## Landing page<a id="sec-2-1" name="sec-2-1"></a>
+
+-   Full width slideshow with pictures of the different sections of
+    the club. The pictures are shuffled on every refresh so people
+    cannot complain a certain picture is always there.
+-   Facebook Page plugin AND
+-   Gallery with randomly chosen pictures from the Facebook
+    page. Updated every day.
+-   Calendar showing ALL individual calendars AND facebook events
+    from the Facebook page. These events are only updated at a
+    certain time every day, so updates do not occur instantaneously.
+-   Sponsors images with links. Good visibility is important.
+-   Footer with all social buttons and contact info. Very easy to
+    send a quick email or check our address.
+
+## Each section<a id="sec-2-2" name="sec-2-2"></a>
+
+-   General information
+-   A customised calendar showing all trainings and fixtures. Should
+    be connected to
+    Teamingly/Teamer/Teamers/Any-Sports-Management-App.
+
+## 'More' section<a id="sec-2-3" name="sec-2-3"></a>
+
+This section is reserved for other matters like the history of the
+club and other extra-curricular activities.
+
+# What tools does it use?<a id="sec-3" name="sec-3"></a>
+
+## Content generation and template system, building the website<a id="sec-3-1" name="sec-3-1"></a>
 
 [Middleman](<https://middlemanapp.com/>) (a Ruby static site
 generator) using [Slim](<http://slim-lang.com/>) as a template
@@ -52,7 +88,7 @@ writing the markup.
 Others are provided by the [Padrino
 framework](<http://www.padrinorb.com/>).
 
-### Deployment<a id="sec-2-1-1" name="sec-2-1-1"></a>
+### Deployment<a id="sec-3-1-1" name="sec-3-1-1"></a>
 
 The website can be deployed either by running `rake
    deploy_droplet`, if an own server is configured beforehand or
@@ -64,7 +100,7 @@ to another repo, that is 'GitHub Pages enabled'.
 
 More information can be found in the Rakefile or config.rb respectively.
 
-## Dependency manager<a id="sec-2-2" name="sec-2-2"></a>
+## Dependency manager<a id="sec-3-2" name="sec-3-2"></a>
 
 RubyGems are all provided in the Gemfile to use with Bundler.
 
@@ -74,7 +110,7 @@ necessary files. The latter are 'imported' with `//= require`
 
 Rakefile to execute simple tasks is available too.
 
-## Stylesheets<a id="sec-2-3" name="sec-2-3"></a>
+## Stylesheets<a id="sec-3-3" name="sec-3-3"></a>
 
 Sass files are automatically generated, the main Sass file is
 located at: `assets/css/style.sass`, and it uses partials (with
@@ -86,12 +122,12 @@ Another stylesheet - `assets/css/delayed.sass` - is loaded after
 the document is ready, to reduce the amount of unnecessary data for
 the above-the-fold content
 
-### Responsiveness<a id="sec-2-3-1" name="sec-2-3-1"></a>
+### Responsiveness<a id="sec-3-3-1" name="sec-3-3-1"></a>
 
 Bootstrap framework (v3.3.5) - <http://getbootstrap.com>. CSS (grid,
 panel, forms, nav, navbar&#x2026;) and JS (scrollspy.js, affix.js).
 
-### Sponsors images = spriting with Compass<a id="sec-2-3-2" name="sec-2-3-2"></a>
+### Sponsors images = spriting with Compass<a id="sec-3-3-2" name="sec-3-3-2"></a>
 
 All sponsor images are put in a folder which is then passed to
 Compass to generate the sprite PNG and the necessary CSS. This
@@ -101,12 +137,12 @@ remove sponsors when needed.
 The images are then put in a kind of 'masonry' layout, which does
 not look too bad.
 
-## Documentation<a id="sec-2-4" name="sec-2-4"></a>
+## Documentation<a id="sec-3-4" name="sec-3-4"></a>
 
 OPTIONAL: Emacs Org mode - to generate docs
 (`README.md`). Otherwise just edit markdown.
 
-# Previewing, simple install<a id="sec-3" name="sec-3"></a>
+# Previewing, simple install<a id="sec-4" name="sec-4"></a>
 
 First two things are bundler and rake. Install all dependencies with
 `bundle install`.
@@ -119,7 +155,7 @@ The site should be available at:
 
 `localhost:4567/`
 
-# "*Dynamic content*"<a id="sec-4" name="sec-4"></a>
+# "*Dynamic content*"<a id="sec-5" name="sec-5"></a>
 
 Files in the partials folder mainly. Generated with PHP scripts
 (using Facebook Graph API) elsewhere and pushed with a Machine User
@@ -144,25 +180,25 @@ using the Facebook Graph API, and is more convenient. This one, and
 the fotorama gallery are loaded only when the user scrolls past a
 certain point, to avoid having to load it at the beginning.
 
-# Other "patches"<a id="sec-5" name="sec-5"></a>
+# Other "patches"<a id="sec-6" name="sec-6"></a>
 
 -   `middleman-alias` gem is used to make redirects. For example, some
-    people still use `website-address/site/en/` or
-    `website-address/site/index.php`. For the rest of pages, a custom
-    404 is provided to go back to the home page.
+    people still append `/site/en/` or `/site/index.php` as `/`, since
+    that was the normal use with the old website. For the rest of
+    pages, a custom 404 is provided to go back to the home page.
 
 -   Contact forms supported by Formspree - although a good idea - are
     dropped for the moment due to the lack of a clear Privacy
     Policy. A contact list is provided instead.
 
-# Known issues<a id="sec-6" name="sec-6"></a>
+# Known issues<a id="sec-7" name="sec-7"></a>
 
-# Possible problems<a id="sec-7" name="sec-7"></a>
+# Possible problems<a id="sec-8" name="sec-8"></a>
 
 Automatically pushing "dynamic content" with the Machine User could
 break the page or have unintended results.
 
-# Improvements<a id="sec-8" name="sec-8"></a>
+# Improvements<a id="sec-9" name="sec-9"></a>
 
 -   Include PHP scripts in this repo or submodule.
 
