@@ -146,9 +146,14 @@ certain point, to avoid having to load it at the beginning.
 
 # Other "patches"<a id="sec-5" name="sec-5"></a>
 
-Contact forms supported by Formspree - although a good idea - are
-dropped for the moment due to the lack of a clear Privacy Policy. A
-contact list is provided instead.
+-   `middleman-alias` gem is used to make redirects. For example, some
+    people still use `website-address/site/en/` or
+    `website-address/site/index.php`. For the rest of pages, a custom
+    404 is provided to go back to the home page.
+
+-   Contact forms supported by Formspree - although a good idea - are
+    dropped for the moment due to the lack of a clear Privacy
+    Policy. A contact list is provided instead.
 
 # Known issues<a id="sec-6" name="sec-6"></a>
 
