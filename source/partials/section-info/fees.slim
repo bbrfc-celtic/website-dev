@@ -5,14 +5,14 @@
       | Forms and fees
   .panel-body
     .btn-group aria-label=("Registration Form") role="group"
-      a.btn.btn-default href="" role="button"  Registration form
-      a.btn.btn-default href="" role="button"  Sample filled in
+      a.btn.btn-default href= file_link("registration_form") role="button"  Registration form
+      a.btn.btn-default href= file_link("registration_form_filled") role="button"  Sample filled in
     .btn-group aria-label=("Medical Form") role="group"
-      a.btn.btn-default href="" role="button"  Medical form
-      a.btn.btn-default href="" role="button"  Sample filled in
+      a.btn.btn-default href= file_link("medical_form") role="button"  Medical form
+      a.btn.btn-default href= file_link("medical_form_filled") role="button"  Sample filled in
     hr/
     .btn-group aria-label=("Tranfer form") role="group"
-      a.btn.btn-default href="" role="button"  Transfer form
+      a.btn.btn-default href= file_link("transfer_form") role="button"  Transfer form
     span style=("font-size: 0.9em")  - If you come from another Belgian club
     hr/
     table.table.table-bordered.table-condensed
