@@ -30,6 +30,18 @@ task :deploy_droplet do
   puts status ? "OK" : "FAILED"
 end
 
+desc "Deploy website via git to GitHub Pages"
+task :deploy_gh_pages do
+  puts "## Deploying website to GitHub Pages using Middleman-deploy"
+  system("middleman deploy")
+end
+
+desc "Build and deploy to GH pages"
+task :publish_gh_pages => [:build, :docs, :deploy_gh_pages] do
+end
+
+
+
 desc "Build and deploy website to test server"
 task :gen_deploy => [:build, :docs, :deploy_droplet] do
 end
