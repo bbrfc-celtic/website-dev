@@ -9,6 +9,9 @@ gem "middleman-deploy"
 gem "slim"
 gem "uglifier"
 
+# Testing
+gem "rspec"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 

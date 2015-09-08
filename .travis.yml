@@ -1,9 +1,10 @@
 language: ruby
 rvm:
  - "2.0.0"
- - "1.9.2"
- - "1.9.3"
+ - "2.1.x"
+ - "2.2.x"
 # uncomment this line if your project needs to run something other than `rake`:
+before_script: bundle exec rspec
 script: bundle exec middleman build
 
 # script: bundle exec rspec spec
