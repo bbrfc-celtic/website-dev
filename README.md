@@ -155,6 +155,12 @@ The site should be available at:
 
 `localhost:4567/`
 
+Everything works out of the box, if you have a JavaScript runtime,
+like JavaScriptCore for Mac OS X (Webkit) or something like Node
+JS. Otherwise install one of these or uncomment the line `gem
+  therubyracer` in the Gemfile and run bundler to have a dedicated
+Ruby-Javascript runtime.
+
 # "*Dynamic content*"<a id="sec-5" name="sec-5"></a>
 
 Files in the partials folder mainly. Generated with PHP scripts

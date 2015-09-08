@@ -13,7 +13,16 @@ nav.navbar.navbar-inverse.navbar-fixed-top
         = nav_link "Men XV", "/men/"
         = nav_link 'Women XV', '/women/'
         = nav_link 'Touch', '/touch/'
-        = nav_link 'School', ''
+        li.dropdown
+          a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+            | School
+            i.fa.fa-caret-down
+          ul.dropdown-menu
+            = nav_link 'Introduction', '/school/intro/'
+            = nav_link 'Joining & Fees', '/school/joining-fees/'
+            = nav_link 'Calendar', ''
+            = nav_link 'Safety & Equipment', ''
+            = nav_link 'Youth Development', ''
         = nav_link 'Contact', '/contact/'
         li.dropdown
           a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
