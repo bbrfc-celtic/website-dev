@@ -11,6 +11,7 @@ gem "slim"
 gem "uglifier"
 
 # Testing
+gem "html-proofer"
 gem "rspec"
 
 # Live-reloading plugin

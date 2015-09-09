@@ -1,3 +1,5 @@
+require 'html/proofer'
+
 # ~/.ssh/config needs to be configured first for Host 'test. A symlink
 # should also be set in the server linking ~/html/ and /var/www/ or
 # whatever the folder to serve files from is.
@@ -22,7 +24,10 @@ task :preview do
   system("middleman")
 end
 
-# To deploy to Github Pages use the middleman-deploy gem instead!
+task :test do
+  HTML::Proofer.new("./build").run
+end
+
 desc "Deploy website via rsync"
 task :deploy_droplet do
   puts "## Deploying website via rsync to #{SSH_HOST}"
@@ -37,7 +42,7 @@ task :deploy_gh_pages do
 end
 
 desc "Build and deploy to GH pages"
-task :publish_gh_pages => [:build, :docs, :deploy_gh_pages] do
+task :publish_gh_pages => [:build, :deploy_gh_pages] do
 end
 
 
