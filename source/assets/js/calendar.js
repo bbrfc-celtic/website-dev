@@ -10,6 +10,8 @@ jQuery( document ).ready(function( $ ) {
       return menCalendars;
     } else if (location.pathname.indexOf('touch') != -1) {
       return touchCalendars;
+    } else if (location.pathname.indexOf('school') != -1) {
+      return schoolCalendars
     } else {
       return allCalendars;
     }
@@ -39,8 +41,10 @@ jQuery( document ).ready(function( $ ) {
   };
 
   // School calendars
-  var schoolCalendars = {};
-  /* Make it orange! */
+  var schoolCalendars = {
+    googleCalendarId: '',
+    color: "orange" /* Change to SASS orange */
+  };
 
   // All calendars
   var allCalendars = [clubCalendar, menCalendars, touchCalendars, womenCalendars, schoolCalendars];
