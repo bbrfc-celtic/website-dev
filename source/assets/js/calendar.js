@@ -42,8 +42,8 @@ jQuery( document ).ready(function( $ ) {
 
   // School calendars
   var schoolCalendars = {
-    googleCalendarId: '',
-    color: "orange" /* Change to SASS orange */
+    googleCalendarId: 'rugbyschool@brusselsceltic.com',
+    color: "#fa6900" /* Change to SASS orange */
   };
 
   // All calendars
