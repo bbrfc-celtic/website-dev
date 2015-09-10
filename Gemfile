@@ -28,7 +28,6 @@ gem "bootstrap-sass", :require => false
 gem "font-awesome-sass", :require => false
 gem "jquery-rails", :require => false
 gem "backstretch-rails", :require => false
-gem "momentjs-rails", :require => false
-gem "fullcalendar-rails", :require => false
+gem 'fullcalendar-rails', :require => false
 gem "fotoramajs", :require => false
 gem "middleman-alias"

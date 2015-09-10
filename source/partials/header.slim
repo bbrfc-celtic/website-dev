@@ -19,6 +19,9 @@ head
   /![if lte IE 8] <script src="/assets/css/ie/html5shiv.js"></script>
 
   = stylesheet_link_tag "style"
+
+  = javascript_include_tag("immediate")
+
   = javascript_include_tag("global", :defer => true)
 
   = yield_content :assets
