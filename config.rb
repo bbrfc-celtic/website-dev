@@ -107,7 +107,7 @@ configure :build do
 
   activate :minify_html
   # Minify Javascript on build
-  activate :minify_javascript
+  activate :minify_javascript, :inline => true
   set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
   activate :alias
   # Enable cache buster

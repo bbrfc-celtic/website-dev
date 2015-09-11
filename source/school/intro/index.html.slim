@@ -3,6 +3,7 @@ layout: section
 who: School
 headings:
   - Welcome to the BBRFC Celtic rugby school! <i class="fa fa-graduation-cap"></i>
+  - Teams
 ---
 
 = partial "components/nav"
@@ -54,3 +55,36 @@ headings:
         | The U14 to U18 teams complete in national leagues and play a
           match most weekends. All teams from U10 and older have
           training on Wednesday evening at the VUB, from 6 to 8pm.
+
+      = create_heading
+
+
+      ul.nav.nav-tabs#schoolTabs role="tablist"
+        li.active role="presentation"
+          a data-target="#U6" aria-controls="U6" role="tab" data-toggle="tab"
+            | U6
+        li role="presentation"
+          a data-target="#U8" aria-controls="U8" role="tab" data-toggle="tab"
+            | U8
+        li role="presentation"
+          a data-target="#U10" aria-controls="U10" role="tab" data-toggle="tab"
+            | U10
+        li role="presentation"
+          a data-target="#U12" aria-controls="U12" role="tab" data-toggle="tab"
+            | U12
+        li role="presentation"
+          a data-target="#U14" aria-controls="U14" role="tab" data-toggle="tab"
+            | U14
+        li role="presentation"
+          a data-target="#U16" aria-controls="U16" role="tab" data-toggle="tab"
+            | U16
+        li role="presentation"
+          a data-target="#U19" aria-controls="U19" role="tab" data-toggle="tab"
+            | U19
+
+      .tab-content
+        .tab-pane.active#U6 role="tabpanel"
+
+        .tab-pane#U8 role="tabpanel"
+
+        .tab-pane#U10 role="tabpanel"
