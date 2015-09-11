@@ -4,8 +4,8 @@ rvm:
 
 cache: bundler
 
-before_script:
-  - bundle update
+# before_script:
+#   - bundle update
 script:
   - bundle exec middleman build
 after_success:
