@@ -9,7 +9,7 @@ cache: bundler
 script:
   - bundle exec middleman build
 after_success:
-  - bundle exec middleman deploy
+  - rake travis_ci
 
 env:
   global:
