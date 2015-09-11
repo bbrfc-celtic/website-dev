@@ -7,7 +7,9 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-[![Build Status](https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master)](https://travis-ci.org/bbrfc-celtic/website-dev)
+#+CAPTION: Build status for this repo
+#+NAME: Build Status
+[[[[https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master]]]] (https://travis-ci.org/bbrfc-celtic/website-dev)
 
 * Main features
 
