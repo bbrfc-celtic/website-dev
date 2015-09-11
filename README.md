@@ -44,6 +44,8 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
+[\\![Build Status](<https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>)](<https://travis-ci.org/bbrfc-celtic/website-dev>)
+
 # Main features<a id="sec-2" name="sec-2"></a>
 
 ## Landing page<a id="sec-2-1" name="sec-2-1"></a>
@@ -51,12 +53,14 @@ clarity are important.
 -   Full width slideshow with pictures of the different sections of
     the club. The pictures are shuffled on every refresh so people
     cannot complain a certain picture is always there.
--   Facebook Page plugin AND
--   Gallery with randomly chosen pictures from the Facebook
+-   Facebook Page plugin
+-   Gallery with 20 randomly chosen pictures from the Facebook
     page. Updated every day.
--   Calendar showing ALL individual calendars AND facebook events
-    from the Facebook page. These events are only updated at a
-    certain time every day, so updates do not occur instantaneously.
+-   Calendar showing ALL individual calendars from
+    Teamer/Teamingly/<any-sports-team-management-tool> AND facebook
+    events from the Facebook page. The Facebook events are only
+    updated at a certain time every day, so updates do not occur
+    instantaneously.
 -   Sponsors images with links. Good visibility is important.
 -   Footer with all social buttons and contact info. Very easy to
     send a quick email or check our address.
@@ -64,9 +68,8 @@ clarity are important.
 ## Each section<a id="sec-2-2" name="sec-2-2"></a>
 
 -   General information
--   A customised calendar showing all trainings and fixtures. Should
-    be connected to
-    Teamingly/Teamer/Teamers/Any-Sports-Management-App.
+-   A customised calendar showing all trainings and fixtures. It is
+    connected to Teamer/Teamingly/<any-sports-team-management-tool>.
 
 ## 'More' section<a id="sec-2-3" name="sec-2-3"></a>
 
