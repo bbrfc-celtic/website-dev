@@ -1,4 +1,4 @@
-require 'html/proofer'
+#require 'html/proofer'
 
 # ~/.ssh/config needs to be configured first for Host 'test. A symlink
 # should also be set in the server linking ~/html/ and /var/www/ or
@@ -47,6 +47,8 @@ end
 # desc "Build and deploy website to test server"
 # task :gen_deploy => [:build, :docs, :deploy_droplet] do
 # end
+
+
 
 # helper for errors
 def try(command)
