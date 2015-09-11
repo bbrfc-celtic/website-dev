@@ -29,12 +29,12 @@ end
 # end
 
 
-desc "Build and deploy to GH pages"
-task :travis_ci do
-  try "git config --global user.name ${GH_NAME}"
-  try "git config --global user.email ${GH_EMAIL}"
-  system("middleman deploy")
-end
+# desc "Build and deploy to GH pages"
+# task :travis_ci do
+#   try "git config --global user.name ${GH_NAME}"
+#   try "git config --global user.email ${GH_EMAIL}"
+#   system("middleman deploy")
+# end
 
 
 
