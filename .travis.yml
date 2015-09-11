@@ -6,6 +6,10 @@ rvm:
 # uncomment this line if your project needs to run something other than `rake`:
 before_script: bundle exec rspec
 script: bundle exec middleman build
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: bundle exec middleman deploy
 
 # script: bundle exec rspec spec
 
