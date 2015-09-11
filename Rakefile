@@ -29,15 +29,6 @@ end
 # end
 
 
-# desc "Build and deploy to GH pages"
-# task :travis_ci do
-#   try "git config --global user.name ${GH_NAME}"
-#   try "git config --global user.email ${GH_EMAIL}"
-#   system("middleman deploy")
-# end
-
-
-
 # desc "Deploy website via rsync"
 # task :deploy_droplet do
 #   puts "## Deploying website via rsync to #{SSH_HOST}"
@@ -47,13 +38,3 @@ end
 # desc "Build and deploy website to test server"
 # task :gen_deploy => [:build, :docs, :deploy_droplet] do
 # end
-
-
-
-# helper for errors
-def try(command)
-  system command
-  if $? != 0 then
-    raise "Command: `#{command}` exited with code #{$?.exitstatus}"
-  end
-end
