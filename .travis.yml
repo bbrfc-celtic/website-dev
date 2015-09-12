@@ -5,11 +5,9 @@ cache: bundler
 script:
   - bundle exec middleman build
 deploy:
-  - git config --global user.name ${GH_NAME}
-  - git config --global user.email ${GH_EMAIL}
-  - bundle exec middleman deploy
-  # provider: script
-  # script: scripts/deploy.sh
+  skip_cleanup: true
+  provider: script
+  script: scripts/deploy.sh
 
 env:
   # global:
