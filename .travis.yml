@@ -4,10 +4,9 @@ rvm:
 cache: bundler
 script:
   - bundle exec middleman build
-after_success:
-  - git config --global user.name ${GH_NAME}
-  - git config --global user.email ${GH_EMAIL}
-  - bundle exec middleman deploy &> /dev/null
+deploy:
+  provider: script
+  script: scripts/deploy.sh
 
 env:
   # global:
