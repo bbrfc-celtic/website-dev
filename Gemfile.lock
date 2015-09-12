@@ -75,7 +75,7 @@ GEM
     hike (1.2.3)
     hooks (0.4.1)
       uber (~> 0.0.14)
-    html-proofer (2.5.0)
+    html-proofer (2.5.1)
       addressable (~> 2.3)
       colored (~> 1.2)
       mercenary (~> 0.3.2)

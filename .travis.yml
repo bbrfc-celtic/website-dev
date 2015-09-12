@@ -4,7 +4,7 @@
 language: ruby
 rvm:
 - 2.0.0
-cache: bundler
+#cache: bundler
 
 before_script:
   - git config --global user.name ${GH_NAME}
