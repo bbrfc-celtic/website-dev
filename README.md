@@ -52,7 +52,8 @@ clarity are important.
 
 -   Full width slideshow with pictures of the different sections of
     the club. The pictures are shuffled on every refresh so people
-    cannot complain a certain picture is always there.
+    cannot complain a certain picture is always there when they open
+    the page.
 -   Facebook Page plugin
 -   Gallery with 20 randomly chosen pictures from the Facebook
     page. Updated every day.
@@ -94,9 +95,9 @@ framework](<http://www.padrinorb.com/>).
 ### Deployment<a id="sec-3-1-1" name="sec-3-1-1"></a>
 
 The website can be deployed either by running `rake
-   deploy_droplet`, if an own server is configured beforehand or
-`middleman deploy`, to deploy to GitHub pages, using the
-`middleman-deploy` gem.
+   deploy_droplet`, if a server is configured beforehand or `middleman
+   deploy`, to deploy to GitHub pages, using the `middleman-deploy`
+gem.
 
 When using the middleman method, the `/build` directory is pushed
 to another repo, that is 'GitHub Pages enabled'.
@@ -122,13 +123,12 @@ bootstrap). Compiles to `assets/css/style.css`, which is
 compressed.
 
 Another stylesheet - `assets/css/delayed.sass` - is loaded after
-the document is ready, to reduce the amount of unnecessary data for
-the above-the-fold content
+the document is ready, to make HTML parsing and rendering seem a
+bit faster.
 
 ### Responsiveness<a id="sec-3-3-1" name="sec-3-3-1"></a>
 
-Bootstrap framework (v3.3.5) - <http://getbootstrap.com>. CSS (grid,
-panel, forms, nav, navbar&#x2026;) and JS (scrollspy.js, affix.js).
+Bootstrap framework (v3.3.5) - <http://getbootstrap.com>.
 
 ### Sponsors images = spriting with Compass<a id="sec-3-3-2" name="sec-3-3-2"></a>
 
@@ -136,6 +136,9 @@ All sponsor images are put in a folder which is then passed to
 Compass to generate the sprite PNG and the necessary CSS. This
 process is automatic and makes it very simple to just add or
 remove sponsors when needed.
+
+Copy an image to `/assets/img/sponsors/` and it will be available
+with the class `.sponsors-<name-of-image>`.
 
 The images are then put in a kind of 'masonry' layout, which does
 not look too bad.
@@ -215,8 +218,8 @@ break the page or have unintended results.
     members come from, extracting info using the Facebook Graph
     API. Then link it to string: "most international rugby club".
 
--   Make use of the blogging feature to make the website feel even
-    more 'alive' (who is going to be in charge of writing
+-   Make use of the blogging feature/extension to make the website
+    feel even more 'alive' (who is going to be in charge of writing
     posts/news/updates?)
 
 -   Make use of Middleman's i18n feature and translate the content to

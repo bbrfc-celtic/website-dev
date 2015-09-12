@@ -1,3 +1,6 @@
+# middleman deploy standard streams go to dev null to hide sensitive
+# information like the GitHub Token
+
 language: ruby
 rvm:
 - 2.0.0
