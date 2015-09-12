@@ -1,5 +1,18 @@
 #+TITLE: BBRFC Celtic Website Documentation
+#+DATE: <2015-09-12 Sat>
 #+AUTHOR: Carlos Requena
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.5.1 (Org mode 8.2.10)
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+
 
 * Goal of the project
 
@@ -7,8 +20,9 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-[![Build Status](https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master)](https://travis-ci.org/bbrfc-celtic/website-dev)
-[![Dependency Status](https://gemnasium.com/bbrfc-celtic/website-dev.svg)](https://gemnasium.com/bbrfc-celtic/website-dev)
+[[https://travis-ci.org/bbrfc-celtic/website-dev][https://api.travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master]]
+
+
 * Main features
 
 

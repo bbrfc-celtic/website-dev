@@ -44,8 +44,7 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-[\\![Build Status](<https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>)](<https://travis-ci.org/bbrfc-celtic/website-dev>)
-[\\![Dependency Status](![img](//gemnasium.com/bbrfc-celtic/website-dev.svg))](<https://gemnasium.com/bbrfc-celtic/website-dev>)
+[<https://api.travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>](https://travis-ci.org/bbrfc-celtic/website-dev)
 
 # Main features<a id="sec-2" name="sec-2"></a>
 
