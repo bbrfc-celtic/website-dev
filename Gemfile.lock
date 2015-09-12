@@ -20,7 +20,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
     autoprefixer-rails (6.0.2)
       execjs
       json
@@ -41,7 +40,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    colored (1.2)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -58,8 +56,6 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    ethon (0.7.4)
-      ffi (>= 1.3.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
     ffi (1.9.10)
@@ -75,14 +71,6 @@ GEM
     hike (1.2.3)
     hooks (0.4.1)
       uber (~> 0.0.14)
-    html-proofer (2.5.1)
-      addressable (~> 2.3)
-      colored (~> 1.2)
-      mercenary (~> 0.3.2)
-      nokogiri (~> 1.5)
-      parallel (~> 1.3)
-      typhoeus (~> 0.7)
-      yell (~> 2.0)
     htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
@@ -97,7 +85,6 @@ GEM
       rb-inotify (>= 0.9)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mercenary (0.3.5)
     middleman (3.4.0)
       coffee-script (~> 2.2)
       compass (>= 1.0.0, < 2.0.0)
@@ -127,11 +114,10 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
+    middleman-livereload (3.4.3)
+      em-websocket (~> 0.5.1)
+      middleman-core (>= 3.3)
+      rack-livereload (~> 0.3.15)
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
@@ -157,7 +143,6 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
-    parallel (1.6.1)
     ptools (1.3.2)
     rack (1.6.4)
     rack-livereload (0.3.16)
@@ -199,8 +184,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    typhoeus (0.7.3)
-      ethon (>= 0.7.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
@@ -209,7 +192,6 @@ GEM
       json (>= 1.8.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yell (2.0.5)
 
 PLATFORMS
   ruby
@@ -220,12 +202,11 @@ DEPENDENCIES
   font-awesome-sass
   fotoramajs
   fullcalendar-rails
-  html-proofer
   jquery-rails
   middleman (~> 3.4.0)
   middleman-alias
   middleman-deploy
-  middleman-livereload (~> 3.1.0)
+  middleman-livereload
   middleman-minify-html
   middleman-sprockets
   slim
