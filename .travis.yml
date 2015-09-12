@@ -3,18 +3,16 @@
 
 language: ruby
 rvm:
-- 2.2.3
+  - "2.2.3"
 cache: bundler
 
 before_script:
   - git config --global user.name ${GH_NAME}
   - git config --global user.email ${GH_EMAIL}
 
-# If build or deploy fails, build is stopped and does not carry on.
+# If build, test or deploy fails, build is stopped and does not carry on.
 script:
-  - bundle exec middleman build
-  - bundle exec rake test
-  - bundle exec middleman deploy &> /dev/null
+  - bundle exec middleman build && bundle exec rake test && bundle exec middleman deploy &> /dev/null
 
 env:
   global:
