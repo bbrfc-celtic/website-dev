@@ -1,4 +1,4 @@
-#require 'html/proofer'
+require 'html/proofer'
 
 # ~/.ssh/config needs to be configured first for Host 'test. A symlink
 # should also be set in the server linking ~/html/ and /var/www/ or
@@ -24,10 +24,14 @@ task :preview do
   system("middleman")
 end
 
-# task :test do
-#   HTML::Proofer.new("./build").run
-# end
-
+task :test do
+  HTML::Proofer.new("build/", {
+		      :href_ignore => [
+			"#",
+                        ""
+		      ],
+	            }).run
+end
 
 # desc "Deploy website via rsync"
 # task :deploy_droplet do
@@ -36,5 +40,5 @@ end
 #   puts status ? "OK" : "FAILED"
 # end
 # desc "Build and deploy website to test server"
-# task :gen_deploy => [:build, :docs, :deploy_droplet] do
+# task :gen_deploy => [:build, :deploy_droplet] do
 # end

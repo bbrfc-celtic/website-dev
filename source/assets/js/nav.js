@@ -1,3 +1,4 @@
+/* Navpill navigation */
 $('.nav-pills').affix({
   offset: {
     top: 8,
@@ -5,4 +6,4 @@ $('.nav-pills').affix({
       return $('div.container-third').outerHeight() + $('footer').outerHeight() + 30;
     }
   }
-})
+});

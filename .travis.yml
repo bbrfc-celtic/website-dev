@@ -5,12 +5,14 @@ language: ruby
 rvm:
 - 2.0.0
 cache: bundler
-script:
-  - bundle exec middleman build
+
+before_script:
   - git config --global user.name ${GH_NAME}
   - git config --global user.email ${GH_EMAIL}
-  - bundle exec middleman deploy &> /dev/null
 
+# If build or deploy fails, build is stopped and does not carry on.
+script:
+  - bundle exec middleman build && bundle exec middleman deploy &> /dev/null
 
 env:
   global:

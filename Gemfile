@@ -12,7 +12,6 @@ gem "uglifier"
 
 # Testing
 gem "html-proofer"
-gem "rspec"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
