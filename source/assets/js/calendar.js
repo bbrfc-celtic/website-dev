@@ -65,6 +65,9 @@ jQuery( document ).ready(function( $ ) {
       }
       element.tooltip({
 	title: event.title + ' - ' + textToShow,
+	/* Setting container makes the tooltip display on top of other
+	elements/overlapping divs */
+	container: 'body'
       });
     },
 
