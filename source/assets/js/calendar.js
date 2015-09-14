@@ -20,6 +20,7 @@ jQuery( document ).ready(function( $ ) {
   // Club calendar
   var clubCalendar = {
     events: facebookEvents,
+    color: "#fa6900"
   };
 
   // Men calendars
@@ -43,7 +44,7 @@ jQuery( document ).ready(function( $ ) {
   // School calendars
   var schoolCalendars = {
     googleCalendarId: 'rugbyschool@brusselsceltic.com',
-    color: "#fa6900" /* Change to SASS orange */
+    color: "#3a87ad"
   };
 
   // All calendars
