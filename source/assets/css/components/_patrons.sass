@@ -1,0 +1,15 @@
+@import compass/utilities/sprites
+
+$patrons-sprite-dimensions: true
+$patrons-layout: smart
+@import 'patrons/*.png'
++all-patrons-sprites
+
+.thumbnail
+  height: 30em
+  caption
+    p
+      overflow: hidden
+      text-overflow: ellipsis
+  .patrons
+    margin: 0 auto
