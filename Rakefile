@@ -30,6 +30,7 @@ task :test do
 			"#",
                         ""
 		      ],
+                      :disable_external => true
 	            }).run
 end
 
