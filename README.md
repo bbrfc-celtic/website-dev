@@ -95,15 +95,20 @@ framework](<http://www.padrinorb.com/>).
 
 ### Deployment<a id="sec-3-1-1" name="sec-3-1-1"></a>
 
-The website can be deployed either by running `rake
-   deploy_droplet`, if a server is configured beforehand or `middleman
-   deploy`, to deploy to GitHub pages, using the `middleman-deploy`
-gem.
+Pushing will trigger a Travis build. Travis will build the site,
+run some tests and upload to another GitHub-Pages-enabled-repo
+using the `middleman-deploy` gem and an access token.
 
-When using the middleman method, the `/build` directory is pushed
-to another repo, that is 'GitHub Pages enabled'.
+This behaviour can be avoid by committing and including the text
+`[ci skip]` somewhere in the commit message.
 
-More information can be found in the Rakefile or config.rb respectively.
+Pull requests will not build.
+
+The website can also be deployed by running `rake deploy_droplet`,
+if a server is configured beforehand. Just figure something out
+with the `/build/` folder.
+
+Check the Rakefile, config.rb and .travis.yml !
 
 ## Dependency manager<a id="sec-3-2" name="sec-3-2"></a>
 
@@ -209,7 +214,9 @@ certain point, to avoid having to load it at the beginning.
 # Possible problems<a id="sec-8" name="sec-8"></a>
 
 Automatically pushing "dynamic content" with the Machine User could
-break the page or have unintended results.
+break stuff or have unintended results. However Travis CI could avoid
+this, since it runs tests before deployment, and if one step fails, it
+does not carry on, hence it will not deploy.
 
 # Improvements<a id="sec-9" name="sec-9"></a>
 

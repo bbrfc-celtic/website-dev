@@ -11,6 +11,7 @@ description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touc
 
 - content_for :assets do
   = javascript_include_tag("section", :defer => true)
+  = javascript_include_tag("gmaps", :defer => true)
 
 
 = partial "components/nav"
@@ -92,7 +93,7 @@ description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touc
 
       = create_heading
 
-      iframe allowfullscreen="" frameborder="0" height="500px" src="https://www.google.com/maps/embed/v1/place?q=BBRFC+Celtic+Rugby+Club,+Boulevard+du+Triomphe,+Ixelles,+Belgium&key=AIzaSyBU2T9PaAWLTUyi9N_nKeKaJ8QUcxC85ZI" style="border:0" width="100%"
+      iframe#pitch allowfullscreen="" frameborder="0" height="500px" style="border:0" width="100%"
 
       .media
         .media-left.media-middle
