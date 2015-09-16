@@ -1,15 +1,23 @@
 @import compass/utilities/sprites
+@import customVariables
 
 $patrons-sprite-dimensions: true
 $patrons-layout: smart
 @import 'patrons/*.png'
 +all-patrons-sprites
 
+$lines-to-show: 5
+
 .thumbnail
-  height: 30em
-  caption
-    p
-      overflow: hidden
-      text-overflow: ellipsis
+  p
+    display: block
+    display: -webkit-box
+    height: $font-size-base*$line-height-base*$lines-to-show
+    -webkit-line-clamp: $lines-to-show
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
   .patrons
     margin: 0 auto
+  button
+    margin: 1em
