@@ -11,12 +11,14 @@ $lines-to-show: 5
 .thumbnail
   p
     display: block
-    display: -webkit-box
     height: $font-size-base*$line-height-base*$lines-to-show
-    -webkit-line-clamp: $lines-to-show
-    -webkit-box-orient: vertical
     overflow: hidden
-    text-overflow: ellipsis
+  .fade-text
+    position: absolute
+    left: 0
+    width: 100%
+    padding-top: 2em
+    background-image: linear-gradient(to bottom, transparent, white)
   .patrons
     margin: 0 auto
   button
