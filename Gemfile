@@ -7,6 +7,7 @@ gem "middleman", "~>3.4.0"
 gem "middleman-sprockets"
 gem "middleman-minify-html"
 gem "middleman-deploy"
+gem 'middleman-search_engine_sitemap'
 gem "slim"
 gem "uglifier"
 

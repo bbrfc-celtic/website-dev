@@ -109,6 +109,12 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript, :inline => true
   set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+
+  set :url_root, 'http://bbrfc-celtic.be'
+  activate :search_engine_sitemap, default_change_frequency: 'weekly', exclude_if: ->(resource) {
+    resource.url.include? 'partial'
+  }
+
   activate :alias
   # Enable cache buster
   # activate :asset_hash
