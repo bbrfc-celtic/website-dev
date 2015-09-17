@@ -109,6 +109,13 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript, :inline => true
   set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+
+  set :url_root, 'http://bbrfc-celtic.be'
+  activate :search_engine_sitemap, default_change_frequency: 'monthly',
+           exclude_if: ->(resource) {
+    resource.url.include? 'partial'
+  }
+
   activate :alias
   # Enable cache buster
   # activate :asset_hash
@@ -128,3 +135,7 @@ activate :deploy do |deploy|
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   # =>  deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
+set :url_root, 'http://bbrfc-celtic.be'
+activate :search_engine_sitemap, exclude_if: ->(resource) {
+  resource.url.include? 'partial'
+}
