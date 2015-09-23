@@ -7,13 +7,14 @@ $(document).ready(function() {
   var originalPhotos = [
     "assets/img/banner-men.jpg",
     "assets/img/banner-ladies.jpg",
-    "assets/img/banner-touch.jpg"
+    "assets/img/banner-touch.jpg",
+    "assets/img/banner-school.jpg"
   ];
 
   /* Pictures are shuffled on refresh, so sections do not complain one
   particular photo is always the first one to show on screen */
   function activation() {
-    $('div#banner').backstretch(shuffle(originalPhotos), {duration: 2500, fade: 750});
+    $('div#banner').backstretch(shuffle(originalPhotos), {duration: 2000, fade: 550});
   }
 
   function checkOnResize() {
