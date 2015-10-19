@@ -8,13 +8,15 @@ $(document).ready(function() {
     "assets/img/banner-men.jpg",
     "assets/img/banner-ladies.jpg",
     "assets/img/banner-touch.jpg",
-    "assets/img/banner-school.jpg"
+    "assets/img/banner-school.jpg",
+    "assets/img/banner-school2.jpg"
   ];
 
   /* Pictures are shuffled on refresh, so sections do not complain one
-  particular photo is always the first one to show on screen */
+  particular photo is always the first one to show on screen. Only 3
+  are chosen at a time */
   function activation() {
-    $('div#banner').backstretch(shuffle(originalPhotos), {duration: 2000, fade: 550});
+    $('div#banner').backstretch(shuffle(originalPhotos).slice(0, 3), {duration: 2000, fade: 550});
   }
 
   function checkOnResize() {
