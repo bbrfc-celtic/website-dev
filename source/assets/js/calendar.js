@@ -37,7 +37,7 @@ jQuery( document ).ready(function( $ ) {
 
   // Women calendars
   var womenCalendars = {
-    googleCalendarId: 'brusselsceltic.com_8tdrpjjth94rn0uotb3usn0910@group.calendar.google.com',
+    googleCalendarId: 'kj81dj1fllc8uaduu9vi0s77kpdlmb20@import.calendar.google.com',
     color: "purple"
   };
 
