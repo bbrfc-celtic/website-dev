@@ -37,7 +37,7 @@ jQuery( document ).ready(function( $ ) {
 
   // Women calendars
   var womenCalendars = {
-    googleCalendarId: 'brusselsceltic.com_8tdrpjjth94rn0uotb3usn0910@group.calendar.google.com',
+    googleCalendarId: '8nj23co4raufc6eti6db8ujj7vb4ke3v@import.calendar.google.com',
     color: "purple"
   };
 
@@ -60,12 +60,14 @@ jQuery( document ).ready(function( $ ) {
     // Customisation fullCalendar
     firstDay: 1,
     eventRender: function(event, element) {
-      var textToShow = event.start.format('HH:mm');
-      if (event.end) {
+      var textToShow = " - " + event.start.format('HH:mm');
+      /* Women calendars on Teamer have fake end times so excluded
+      from end times formatting below */
+      if (event.end && event.source.googleCalendarId != womenCalendars.googleCalendarId) {
 	textToShow = textToShow.concat(' - ' + event.end.format('HH:mm'));
       }
       element.tooltip({
-	title: event.title + ' - ' + textToShow,
+	title: event.title + textToShow,
 	/* Setting container makes the tooltip display on top of other
 	elements/overlapping divs */
 	container: 'body'
