@@ -60,7 +60,7 @@ jQuery( document ).ready(function( $ ) {
     // Customisation fullCalendar
     firstDay: 1,
     eventRender: function(event, element) {
-      var textToShow = " - " + event.start.format('HH:mm');
+      var textToShow = " : " + event.start.format('HH:mm');
       /* Women calendars on Teamer have fake end times so excluded
       from end times formatting below */
       if (event.end && event.source.googleCalendarId != womenCalendars.googleCalendarId) {
