@@ -54,7 +54,7 @@ helpers do
     class_name = current_page.url == (link_path) ? 'active' : nil
 
     content_tag(:li, :class => class_name) do
-      link_to link_text, link_path
+      link_to(link_text, link_path)
     end
   end
 

@@ -1,4 +1,5 @@
 require 'html/proofer'
+require_relative 'test/test.rb'
 
 # ~/.ssh/config needs to be configured first for Host 'test. A symlink
 # should also be set in the server linking ~/html/ and /var/www/ or
