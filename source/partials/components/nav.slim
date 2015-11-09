@@ -10,7 +10,13 @@ nav.navbar.navbar-inverse.navbar-fixed-top
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         = nav_link "Home", "/"
-        = nav_link "Men XV", "/men/"
+        li.dropdown
+          a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+            | Men XV
+            i.fa.fa-caret-down
+          ul.dropdown-menu
+            = nav_link 'Senior Team', '/men/senior/'
+            = nav_link 'Veterans', '/men/veterans/'
         = nav_link 'Women XV', '/women/'
         = nav_link 'Touch', '/touch/'
         li.dropdown
