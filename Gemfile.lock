@@ -230,7 +230,7 @@ DEPENDENCIES
   fullcalendar-rails
   html-proofer
   jquery-rails
-  middleman (~> 3.4.0)
+  middleman (~> 3.4.1)
   middleman-alias
   middleman-deploy
   middleman-livereload
