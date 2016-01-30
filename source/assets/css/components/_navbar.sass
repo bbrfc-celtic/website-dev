@@ -21,4 +21,14 @@ nav
 .nav-pills
   &.affix-bottom
     position: absolute
-/* Possible navpills customisation here
+  li
+    a
+      color: $gray-light
+    &.active, &:hover
+      a
+        /* Color also set in custom Variables
+        border-left: 2px solid $bc-green
+        color: $bc-green
+        padding-left: 20px
+        &:hover, &:focus
+          background-color: white
