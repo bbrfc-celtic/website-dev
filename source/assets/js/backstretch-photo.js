@@ -6,6 +6,7 @@ $(document).ready(function() {
   };
   var originalPhotos = [
     "assets/img/banner-men.jpg",
+    "assets/img/banner-men2.jpg",
     "assets/img/banner-ladies.jpg",
     "assets/img/banner-touch.jpg",
     "assets/img/banner-school.jpg",
