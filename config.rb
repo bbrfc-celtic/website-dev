@@ -49,12 +49,16 @@ helpers do
     "/assets/static/" + file + ".pdf"
   end
 
-  def nav_link(link_text, link_path)
+  def nav_link(link_text, link_path, target = "_self", option_class = nil)
 
     class_name = current_page.url == (link_path) ? 'active' : nil
+    if option_class != nil and
+      class_name == nil
+      class_name = option_class
+    end
 
     content_tag(:li, :class => class_name) do
-      link_to(link_text, link_path)
+      link_to(link_text, link_path, :target => target)
     end
   end
 
