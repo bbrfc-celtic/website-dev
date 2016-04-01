@@ -46,7 +46,12 @@ activate :automatic_image_sizes
 helpers do
 
   def file_link(file)
-    "/assets/static/" + file + ".pdf"
+    assets_path = "assets/static/"
+    if File.extname(file).empty?
+      assets_path + file + ".pdf"
+    else
+      assets_path + file
+    end
   end
 
   def nav_link(link_text, link_path, target = "_self", option_class = nil)
