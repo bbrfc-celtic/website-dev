@@ -46,7 +46,7 @@ activate :automatic_image_sizes
 helpers do
 
   def file_link(file)
-    assets_path = "assets/static/"
+    assets_path = "/assets/static/"
     if File.extname(file).empty?
       assets_path + file + ".pdf"
     else
