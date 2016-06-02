@@ -26,12 +26,12 @@ task :preview do
 end
 
 task :test do
-  HTMLProofer.new("build/", {
-		      :href_ignore => [
+  HTMLProofer.check_directory("build/", {
+		      :url_ignore => [
 			"#",
                         ""
 		      ],
-                      :disable_external => true
+                      :disable_external => false
 	            }).run
 end
 
