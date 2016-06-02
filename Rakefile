@@ -1,4 +1,4 @@
-require 'html/proofer'
+require 'html-proofer'
 require_relative 'test/test.rb'
 
 # ~/.ssh/config needs to be configured first for Host 'test. A symlink
@@ -26,7 +26,7 @@ task :preview do
 end
 
 task :test do
-  HTML::Proofer.new("build/", {
+  HTMLProofer.new("build/", {
 		      :href_ignore => [
 			"#",
                         ""

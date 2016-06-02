@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 # gem "therubyracer"
+gem "rake", "~> 11.1.2"
 gem 'middleman', '~> 3.4.1'
 gem "middleman-sprockets"
 gem "middleman-minify-html"
