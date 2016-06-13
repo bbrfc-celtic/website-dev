@@ -4,6 +4,7 @@ who: School
 headings:
   - Welcome to the BBRFC Celtic rugby school! <i class="fa fa-graduation-cap"></i>
   - Teams
+  - Newsletter & Mailing list
 ---
 
 = partial "components/nav"
@@ -92,7 +93,7 @@ headings:
 
           dl.dl-horizontal
             dt Coach(es):
-            dd Min San Pochard and Céline Forez
+            dd Céline Forez
 
             dt Team Manager:
             dd -
@@ -168,7 +169,7 @@ headings:
 
           dl.dl-horizontal
             dt Coach(es):
-            dd Fred Michiels (+32 490 582 662), Andrew Mavin and Erik Boman
+            dd Fred Michiels (+32 490 582 662) and Andrew Mavin
 
             dt Team Manager:
             dd -
@@ -192,7 +193,7 @@ headings:
 
           dl.dl-horizontal
             dt Coach(es):
-            dd Benjamin Baker and Fabian Kaisen
+            dd Benjamin Baker
 
             dt Team Manager:
             dd Ronan McDonagh
@@ -207,7 +208,7 @@ headings:
 
           dl.dl-horizontal
             dt Coach(es):
-            dd Matthijs Roukens, Matt Samuels and Nils Callens
+            dd Matthijs Roukens
 
             dt Team Manager:
             dd -
@@ -217,3 +218,46 @@ headings:
 
             dt Training:
             dd Every Wednesday and Friday evening from 6pm-8pm
+
+      = create_heading
+
+      p If you would like to receive the rugby school newsletter and
+        other general info concerning all age groups, fill in the
+        form below.
+
+      p You can also choose one (or more) age group to receive
+        specific information.
+
+      p These mailing lists are mainly for the newsletter distribution
+        and important events, so we won't be spamming you that much !
+
+      /! Begin MailChimp Signup Form
+      link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" /
+      css:
+        #mc_embed_signup background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+      #mc_embed_signup
+        form#mc-embedded-subscribe-form.validate action="//bbrfc-celtic.us13.list-manage.com/subscribe/post?u=907dd4ef972e404d9f853e1f1&amp;id=0bc780ca27" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank"
+          #mc_embed_signup_scroll
+            .indicates-required
+              span.asterisk *
+              | indicates required
+            .mc-field-group
+              label for="mce-EMAIL"
+                | Email Address
+                span.asterisk *
+              input#mce-EMAIL.required.email name="EMAIL" type="email" value="" /
+            .mc-field-group
+              label for="mce-FNAME"  First Name
+              input#mce-FNAME name="FNAME" type="text" value="" /
+            .mc-field-group
+              label for="mce-LNAME"  Last Name
+              input#mce-LNAME name="LNAME" type="text" value="" /
+            #mce-responses.clear
+              #mce-error-response.response style="display:none"
+              #mce-success-response.response style="display:none"
+            /! real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            div aria-hidden="true" style=("position: absolute; left: -5000px;")
+              input name="b_907dd4ef972e404d9f853e1f1_0bc780ca27" tabindex="-1" type="text" value="" /
+            .clear
+              input#mc-embedded-subscribe.button name="subscribe" type="submit" value="Subscribe" /
+      /! End mc_embed_signup
