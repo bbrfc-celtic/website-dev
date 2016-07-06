@@ -95,6 +95,7 @@ GEM
       railties (>= 3.2.16)
     json (1.8.3)
     kramdown (1.11.1)
+    libv8 (3.16.14.15)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -188,6 +189,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    ref (2.0.0)
     sass (3.4.22)
     slim (3.0.7)
       temple (~> 0.7.6)
@@ -203,6 +205,9 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     temple (0.7.7)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -238,6 +243,7 @@ DEPENDENCIES
   middleman-sprockets
   rake (~> 11.1.2)
   slim
+  therubyracer
   tzinfo-data
   uglifier
   wdm (~> 0.1.0)
