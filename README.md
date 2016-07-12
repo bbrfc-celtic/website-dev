@@ -1,3 +1,7 @@
+<h1 align="center"> BBRFC Celtic Website Dev </h1>
+
+[\![Build Status](<https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>)](<https://travis-ci.org/bbrfc-celtic/website-dev>)
+
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -44,7 +48,6 @@ To create a no-bullshit-attractive-static-HTML-website and give the
 impression there is some "dynamic" content in it. Cleanliness and
 clarity are important.
 
-[\\![Build Status](<https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>)](<https://travis-ci.org/bbrfc-celtic/website-dev>)
 
 # Main features<a id="sec-2" name="sec-2"></a>
 
