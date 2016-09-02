@@ -40,33 +40,60 @@ headings:
           of the Vlaamse Rugby Bond the answer is: NO, these forms are
           not in English or French!
 
-      = partial 'section-info/forms'
+      .panel.panel-default
+        .panel-heading
+          h3.panel-title
+            i.fa.fa-file-pdf-o style=("padding-right: 1em")
+            | Forms
+        .panel-body
+          .btn-group aria-label=("Medical Form") role="group"
+            a.btn.btn-default href= file_link("medical_form") role="button" target="_blank"  Medical form
+            a.btn.btn-default href= file_link("medical_form_filled") role="button" target="_blank"  Sample filled in
+          hr/
+          .btn-group aria-label=("Tranfer form") role="group"
+            a.btn.btn-default href= file_link("transfer_form") role="button" target="_blank"  Transfer form
+          span style=("font-size: 0.9em")  - If you come from another Belgian club
+
+      h3 Registration
 
       p
 
-        | The first form is the Registration Form and must be
-          completed carefully and signed and dated by your parents if
-          you are 16 or younger. (If you do not yet have a Belgian ID
-          then fill in your foreign ID or Passport information where
-          required). Please fill in the club name where
-          required.
+        | In order to register you need to send us a scanned copy of the medical form (see above) 
+          and an email (at rugbyschool@bbrfc-celtic.be) with the following information:
+          <ul>
+            <li>First name</li>
+            <li>Family name</li>
+            <li>Gender</li>
+            <li>Nationality</li>
+            <li>Date and place of birth</li>
+            <li>Address</li>
+            <li>Phone number</li>
+            <li>Email address</li>
+          </ul>
+
+      h3 Medical Form
 
       p
 
-        | The second form is the Medical Form and this is partially
-          filled out by yourself and the bottom left of it is
-          completed by your doctor who must sign and stamp the part
-          he/she completes. The medical examination should cost you
-          less than 30 and take 5-10 minutes maximum!
+        | There is a medical form that must be completed and for those
+          who forget or are not aware that we are in Belgium or are part
+          of the Vlaamse Rugby Bond the answer is: NO, this form is not 
+          in English or French!
 
 
       p
 
-        | Once you have completed both the forms then please return
-          the originals to the coach or the rugby school director. We
-          will get you a license. The license entitles you to FBRB
-          insurance AND authorizes you to play in all FBRB sanctioned
-          matches.
+        | This is partially filled out by yourself and the bottom left 
+          of it is completed by your doctor who must sign and stamp the
+          part he/she completes. The medical examination should cost 
+          you less than 30€ and take 5-10 minutes maximum!
+  
+      p
+
+        | Once you have the completed medical form please send us a good 
+          scanned copy by email. We will get you a license. The license 
+          entitles you to FBRB insurance AND authorizes you to play in 
+          all FBRB sanctioned matches.
 
       = create_heading
 
