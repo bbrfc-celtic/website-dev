@@ -14,6 +14,25 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
 #banner
   i.fa.fa-pause.hidden-xs
 
+<style>
+  .video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+  }
+  .video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+  }
+  .video-js-responsive-container {
+    width: 100%;
+    position: relative;
+  }
+  .video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
 .container-intro
   .jumbotron
     .container
@@ -42,11 +61,11 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
           we are the club for you!
 
       a.button href="/contact/#PitchandClubhouse"  How to find us
-    <div id="promo" class="container" align="center">
+    <div id="promo" class="container video-js-responsive-container vjs-hd" align="center">
       h2
         | More about us
       
-      <video class="video-js vjs-default-skin" style="width: 100% !important; height: auto !important;" controls preload="auto" height="auto" poster="/assets/img/logo-trans.png" data-setup="{"fluid": true}">
+      <video class="video-js vjs-default-skin" autoplay controls preload="auto" width="auto" height="auto" poster="/assets/img/logo-trans.png" data-setup="{}">
         <source src="/assets/vids/BBRFC-Celtic_PROMO.mp4" type='video/mp4'>
         <p class="vjs-no-js">
           To view this video please enable JavaScript, and consider upgrading to a web browser that
