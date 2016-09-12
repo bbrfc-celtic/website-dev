@@ -45,11 +45,16 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
     <div class="container" align="center">
       h2
         | More about us
-        
-      <video id="promo" style="margin: 0 auto; width: 75%;" controls>
-        <source src="/assets/vids/BBRFC-Celtic_PROMO.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
+      
+      <video id="my-video" class="video-js" controls preload="auto" width="75%" poster="/assets/img/logo-trans.png" data-setup="{}">
+        <source src="MY_VIDEO.mp4" type='video/mp4'>
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
       </video>
+
+  <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
     </div>
     
   .container
