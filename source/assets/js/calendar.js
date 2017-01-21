@@ -25,7 +25,7 @@ jQuery( document ).ready(function( $ ) {
 
   // Men calendars
   var menCalendars = {
-    googleCalendarId: '8fq7eo5a737651vubupdknf41omd44j2@import.calendar.google.com',
+    googleCalendarId: 'c18un05f0m1o7kvi58nb863cdduotbdi@import.calendar.google.com',
     color: "#00994c"
   };
 
