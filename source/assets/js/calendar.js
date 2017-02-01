@@ -60,6 +60,8 @@ jQuery( document ).ready(function( $ ) {
     // Customisation fullCalendar
     firstDay: 1,
     eventRender: function(event, element) {
+      event.start.timeZone = "Europe/Brussels";
+      event.end.timeZone = "Europe/Brussels";
       var textToShow = " : " + event.start.format('HH:mm');
       /* Women calendars on Teamer have fake end times so excluded
       from end times formatting below */
