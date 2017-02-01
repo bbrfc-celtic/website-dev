@@ -75,7 +75,7 @@ jQuery( document ).ready(function( $ ) {
 	container: 'body'
       });
     },
-
+    timezone: "Europe/Brussels",
     header: {
       left: "agendaWeek basicWeek month",
       center: "title",
