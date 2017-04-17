@@ -11,6 +11,8 @@ gem "middleman-deploy"
 gem 'middleman-search_engine_sitemap'
 gem "slim"
 gem "uglifier"
+gem "nokogiri"
+
 
 # Testing
 gem "html-proofer"
