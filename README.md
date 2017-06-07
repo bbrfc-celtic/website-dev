@@ -1,6 +1,6 @@
 <h1 align="center"> BBRFC Celtic Website Dev </h1>
 
-[\![Build Status](<https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master>)](<https://travis-ci.org/bbrfc-celtic/website-dev>)
+[![Build Status](https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master)](https://travis-ci.org/bbrfc-celtic/website-dev)
 
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
