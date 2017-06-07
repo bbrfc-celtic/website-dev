@@ -29,7 +29,8 @@ task :test do
   HTMLProofer.check_directory("build/", {
 		      :url_ignore => [
 			"#",
-                        ""
+                        "",
+			"/http://rugby.vlaanderen/"
 		      ],
                       :disable_external => false
 	            }).run
