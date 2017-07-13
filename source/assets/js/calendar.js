@@ -31,7 +31,7 @@ jQuery( document ).ready(function( $ ) {
 
   // Touch calendars
   var touchCalendars = {
-    googleCalendarId: 'rqvfi5889grtqnojljp600serk@group.calendar.google.com',
+    googleCalendarId: 'rqvfi5889grtqnojljp600serk@group.calendar.google.com',	  
     color: "#ce0000"
   };
 
