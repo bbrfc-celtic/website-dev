@@ -27,7 +27,6 @@ nav.navbar.navbar-inverse.navbar-fixed-top
             = nav_link 'Introduction', '/school/intro/'
             = nav_link 'Joining & Fees', '/school/joining-fees/'
             = nav_link 'Safety & Equipment', '/school/safety-equipment/'
-            = nav_link 'Youth Development', '/school/youth-devel/'
             li
               = link_to('Newsletters (PDF)', 'https://drive.google.com/folderview?id=0B-ML5JJtGXOIQ3VhVjhBaGNoa0U&usp=sharing', :target => "_blank")
 
@@ -44,5 +43,11 @@ nav.navbar.navbar-inverse.navbar-fixed-top
             = nav_link 'Patrons', '/more/patrons/'
             li.divider role="separator"
             li.dropdown-header Social
-            = nav_link 'Social Side', '/more/social-side/'
-        = nav_link 'Shop', 'http://www.gilbertrugby.be/product-category/bbrfc-celtic-en/', "_blank", "shop"
+            = nav_link 'Social Side', '/more/social-side/'        
+        li.dropdown
+          a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+            | Shop 
+            i.fa.fa-shopping-cart
+          ul.dropdown-menu
+            li.dropdown-header Our Selling Points
+            = nav_link 'Popshop', 'http://www.gilbertrugby.be/product-category/bbrfc-celtic-en/', "_blank", "shop"
