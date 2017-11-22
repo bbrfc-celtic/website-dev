@@ -30,7 +30,8 @@ task :test do
 		      :url_ignore => [
 			"#",
                         "",
-			"/http://rugby.vlaanderen/"
+			"/http://rugby.vlaanderen/",
+			"http://be.brussels/brussels"
 		      ],
                       :disable_external => false
 	            }).run
