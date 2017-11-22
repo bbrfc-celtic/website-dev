@@ -42,3 +42,50 @@ headings:
       h4 Hôtel de la Poste, Brussels
        
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.23905455327!2d4.343504815746431!3d50.86377397953455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c399fd06cf5f%3A0xb86012a3151c8866!2sHotel+de+la+Poste+T+%26+T!5e0!3m2!1sen!2sbe!4v1511373411282" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="lightbox">
+  <div class="iframeContainer">
+    <div class="toolbarLB">
+      <span class="closeLB" onclick="lightBoxClose()">x</span>
+    </div>
+    <div>
+    <h4>The 50th and 20th anniversary of the Brussels Barbarians Celtics Rugby Club!</h4>
+    <p>BBRFC-Celtic goes Royal as its BBRFC lineage celebrates its 50th anniversary.<br>BBRFC-Celtic goes China as its Celtic lineage celebrates its 20th anniversary.<br>BBRFC-Celtic goes Platinum as, together, it has combined for 70 years of the most internationally flavo(u)red rugby in Belgium.</p>
+    <h5> More details can be found on our <a href="http://bbrfc-celtic.be/anniversary/">Anniversary</a> page.
+    </div>
+  </div>
+</div>
+<style>
+.lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5)
+}
+.toolbarLB {
+  text-align: right;
+  padding: 3px;
+}
+.closeLB {
+  color: red;
+  cursor: pointer;
+}
+.lightbox .iframeContainer {
+  vertical-align: middle;
+  background: #CCC;
+  padding: 2px;
+}
+.lightbox.closed {
+  display: none;
+}
+</style>
+<script>
+lightBoxClose = function() {
+  document.querySelector(".lightbox").classList.add("closed");
+}
+</script>
