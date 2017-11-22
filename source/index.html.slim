@@ -205,17 +205,19 @@ javascript:
     }
     return page;
   }
+  
+  lightBoxClose = function() {
+    document.querySelector(".lightbox").classList.add("closed");
+  }
 
   function init() {
     if (firstTime(thisPage())) {
       // this code only runs for first visit
       document.querySelector(".lightbox").classList.remove("closed");
+    } else {
+      lightBoxClose();
     }
-  }  
-
-  lightBoxClose = function() {
-    document.querySelector(".lightbox").classList.add("closed");
-  }
+  } 
   
   init();
 
