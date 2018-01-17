@@ -14,7 +14,7 @@ before_script:
 
 # If build, test or deploy fails, build is stopped and does not carry on.
 script:
-  - bundle exec middleman build && bundle exec rake test && bundle exec middleman deploy &> /dev/null
+  - bundle exec middleman build --verbose && bundle exec rake test && bundle exec middleman deploy &> /dev/null
 
 env:
   global:
