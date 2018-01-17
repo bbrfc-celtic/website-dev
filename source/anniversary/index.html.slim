@@ -11,6 +11,9 @@ headings:
   - Contact
 ---
 
+- content_for :assets do
+  = javascript_include_tag("section", :defer => true)
+
 = partial "components/nav"
 
 .container
@@ -84,4 +87,4 @@ headings:
       
       h4 Black Tie
       
-
+    = create_nav
