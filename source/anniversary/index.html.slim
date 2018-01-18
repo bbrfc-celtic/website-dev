@@ -8,6 +8,7 @@ headings:
   - Who
   - Price
   - Dress Code
+  - Tickets
 ---
 
 - content_for :assets do
@@ -87,4 +88,50 @@ headings:
       
       h4 Black Tie
       
-    = create_nav
+      = create_heading
+      
+      h4 TICKETS ON SALE NOW VIA BANK TRANSFER
+      
+      .panel.panel-info
+        .panel-heading
+          h3.panel-title
+            i.fa.fa-info-circle style=("padding-right: 1em")
+            | Tickets. Account number and details
+        .panel-body
+            table.table.table-bordered.table-condensed
+              thead
+                tr
+                  th Full
+                  th Concessions
+              tbody
+                tr
+                  td &euro; 110
+                  td &euro; 90 *
+            p 
+            
+              ' * Please contact 
+              
+              a href="mailto:anniversary@bbrfc-celtic.be" our team 
+              
+              |  to discus qualification.
+            hr/
+            ul
+              li BBRFC-Celtic Social
+              li IBAN: BE66 7390 1677 5543
+              li BIC: KREDBEBB
+            | Please your name in the reference.
+            
+        .panel.panel-warning
+          .panel-heading
+            h3.panel-title
+              i.fa.fa-eye style=("padding-right: 1em")
+              | Payment policy!
+          .panel-body
+            p
+
+              ' For any queries such as payment plans, or confirmation of payment, please contact 
+
+              a href="mailto:anniversary@bbrfc-celtic.be" our team
+
+              |  for details.
+      
