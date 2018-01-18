@@ -143,8 +143,9 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
               
 .lightbox
   .iframeContainer
-    .toolbarLB
-      <span class="closeLB" onclick="lightBoxClose()"> close </span>
+    <div class="toolbarLB" onclick="lightBoxClose()">
+      <span class="closeLB" > X </span>
+    </div>
     
     div 
       
@@ -177,17 +178,22 @@ css:
       text-align: center;
     }
     .toolbarLB {
-      text-align: right;
+      text-align: center;
       padding: 3px;
+      cursor: pointer;
+      background: red;
+      border-radius: 50px;
+      width: 50%;
+      margin-left: 25%;
     }
     .closeLB {
-      color: red;
-      cursor: pointer;
+      color: white;      
     }
     .lightbox .iframeContainer {
       vertical-align: middle;
       background: white;
       padding: 2px 10px;
+      border-radius: 50px;
     }
     .lightbox.closed {
       display: none;
