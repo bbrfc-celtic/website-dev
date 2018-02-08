@@ -16,7 +16,8 @@
   var h = window.innerHeight;
 
   // Load the Visualization API and the piechart package.
-  google.load('visualization', '1.0', {'packages':['corechart']});
+  var myMapsApiKey = 'AIzaSyBLTlfY4SUDsbYbdk4WExN-pyGGiZ79Vug';
+  google.load('visualization', '1.0', {'mapsApiKey': myMapsApiKey,'packages':['corechart']});
 
   // Set a callback to run when the Google Visualization API is loaded.
   google.setOnLoadCallback(drawCharts);
