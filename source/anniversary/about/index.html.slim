@@ -2,7 +2,8 @@
 layout: section
 who: Anniversary
 headings:
-  - About
+  - Info
+  - Agenda
 ---
 
 - content_for :assets do
@@ -41,3 +42,38 @@ headings:
       p
         
         | We hope you are royally ready for the event of the half-century!
+      
+      
+      = create_heading
+      
+      
+      ul.nav.nav-tabs role="tablist"
+        li.active role="presentation"
+          a data-target="#U6" aria-controls="U6" role="tab" data-toggle="tab"
+            | Friday 29th of June 2018
+        li role="presentation"
+          a data-target="#U8" aria-controls="U8" role="tab" data-toggle="tab"
+            | Saturday 30th of June 2018
+            
+      .tab-content
+        .tab-pane.in.fade.active#U6 role="tabpanel"
+
+          dl.dl-horizontal
+            dt 11:00 - 18:00 :
+            dd Golf Day - Rgeister here (future link)
+
+            dt 19:00 - 22:00 :
+            dd Evening Reception - More details soon
+
+        .tab-pane.fade#U8 role="tabpanel"
+
+          dl.dl-horizontal
+            dt 10:30 - 13:00 :
+            dd Club Touch Tournament - Rgeister here (future link)
+
+            dt Year of Birth:
+            dd 2010 & 2011
+
+            dt Training:
+            dd Etc....
+
