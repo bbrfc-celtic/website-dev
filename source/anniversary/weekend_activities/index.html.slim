@@ -11,12 +11,18 @@ headings:
 
 - content_for :assets do
   = javascript_include_tag("section", :defer => true)
+  = javascript_include_tag("gmaps", :defer => true)
+
 
 = partial "components/nav"
+
 .container
   .row
+
+    = create_nav
+
     .col-md-9.col-xs-12
-    
+
       = create_heading
       
       h4 Anniversary Weekend Acticities
