@@ -16,7 +16,7 @@ headings:
     
       = create_heading
       
-      p.lead The 50th and 20th anniversary of the Brussels Barbarians Celtics !
+      p.lead The 50th and 20th anniversary of the Brussels Barbarians Celtics Rugby Club!
       
       p.lead Once a BC, always a BC !
 
@@ -47,47 +47,33 @@ headings:
       = create_heading
       
       
-      ul.nav.nav-tabs.dates role="tablist"
+      ul.nav.nav-tabs role="tablist"
         li.active role="presentation"
-          a data-target="#fri" aria-controls="fri" role="tab" data-toggle="tab"
-            | Friday 29/06/2018
+          a data-target="#U6" aria-controls="U6" role="tab" data-toggle="tab"
+            | Friday 29th of June 2018
         li role="presentation"
-          a data-target="#sat" aria-controls="sat" role="tab" data-toggle="tab"
-            | Saturday 30/06/2018
+          a data-target="#U8" aria-controls="U8" role="tab" data-toggle="tab"
+            | Saturday 30th of June 2018
             
-      .tab-content.agend
-        .tab-pane.in.fade.active#fri role="tabpanel"
+      .tab-content
+        .tab-pane.in.fade.active#U6 role="tabpanel"
 
           dl.dl-horizontal
             dt 11:00 - 18:00 :
-            dd Golf Day - Register here (future link)
+            dd Golf Day - Rgeister here (future link)
 
             dt 19:00 - 22:00 :
             dd Evening Reception - More details soon
 
-        .tab-pane.fade#sat role="tabpanel"
+        .tab-pane.fade#U8 role="tabpanel"
 
           dl.dl-horizontal
             dt 10:30 - 13:00 :
-            dd Club Touch Tournament - Register here (future link)
+            dd Club Touch Tournament - Rgeister here (future link)
 
-            dt 13:30 - 14:30 :
-            dd Ladies vs Invitational XV
+            dt Year of Birth:
+            dd 2010 & 2011
 
-            dt 15:00 - 16:00 :
-            dd BBRFC Celtic 1st XV vs Old Boys XV - Register here (future link)
-            
-            dt 19:00 - Late
-            dd <strong> THE MAIN EVENT! </strong> -
-            dd BBRFC Celtic 50 + 20 Anniversary Ball
+            dt Training:
+            dd Etc....
 
-    = create_nav
-    
-css:
-    .agend {
-        font-size: 20px;
-        height: auto;
-    }
-    .dates {
-        font-size: 24px;
-    }
