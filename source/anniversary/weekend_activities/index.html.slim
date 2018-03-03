@@ -1,49 +1,175 @@
 ---
 layout: section
-who: Anniversary
+who: Weekend Activities
 headings:
-  - About
-  - When
-  - Where
-  - Who
-  - Price
-  - Dress Code
-  - Tickets
+  - Contact List
+  - Pitch and Clubhouse
+  - Forms
+  - Legal Information
+description: BBRFC Celtic Rugby Club Home Page Mens &amp; Womens XVs rugby, Touch, Rugby School, and a healthy social side More than just a rugby club!
 ---
 
 - content_for :assets do
   = javascript_include_tag("section", :defer => true)
+  = javascript_include_tag("gmaps", :defer => true)
+
 
 = partial "components/nav"
+
 .container
   .row
+
+    = create_nav
+
     .col-md-9.col-xs-12
-    
+
       = create_heading
-      
-      p.lead The 50th and 20th anniversary of the Brussels Barbarians Celtics Rugby Club!
-      
-      p.lead Once a BC, always a BC !
 
       p
 
-        | BBRFC-Celtic goes Royal as its BBRFC lineage celebrates its 
-          50th anniversary.
-        
-      p  
-        
-        | BBRFC-Celtic goes China as its Celtic lineage celebrates its 
-          20th anniversary.
-          
-      p
-        
-        | BBRFC-Celtic goes Platinum as, together, it has combined for 70 
-          years of the most internationally flavo(u)red rugby in Belgium.
-          
-      p
-        
-        | Come one, come all, it would be a tragedy to miss it! 
-        
-      p
-        
-        | We hope you are royally ready for the event of the half-century!
+        | All the committee members are listed here. Now you can
+          contact the appropriate person!
+
+      table.table.table-default.table-hover
+        thead
+          tr
+            th
+              | Title
+            th
+              | Name
+            th
+              | Email
+        tbody
+          tr
+            td President
+            td Graham Edwards
+            td
+              a href="mailto:president@bbrfc-celtic.be"  president@bbrfc-celtic.be
+          tr
+            td Secretary
+            td Marine Marx
+            td
+              a href="mailto:secretary@bbrfc-celtic.be"  secretary@bbrfc-celtic.be
+          tr
+            td Treasurer
+            td Erik Boman
+            td
+              a href="mailto:treasurer@bbrfc-celtic.be"  treasurer@bbrfc-celtic.be
+          tr
+            td Men XV Rep
+            td Yann Sterckx
+            td
+              a href="mailto:mensxv@bbrfc-celtic.be"  mensxv@bbrfc-celtic.be
+          tr
+            td Women XV Rep
+            td Marine Marx
+            td
+              a href="mailto:ladiesxv@bbrfc-celtic.be"  ladiesxv@bbrfc-celtic.be
+          tr
+            td Touch Rep
+            td Warrent Kint
+            td
+              a href="mailto:touch@bbrfc-celtic.be"  touch@bbrfc-celtic.be
+          tr
+            td Rugby School Director
+            td Stephane Aujean
+            td
+              a href="mailto:rugbyschool@bbrfc-celtic.be"  rugbyschool@bbrfc-celtic.be
+          tr
+            td Communications
+            td Miguel Terol Espino
+            td
+              a href="mailto:communications@bbrfc-celtic.be"  communications@bbrfc-celtic.be
+          tr
+            td Medical Officer
+            td Currently being elected
+            td
+              a href="mailto:communications@bbrfc-celtic.be"  Available soon
+          tr
+            td Procurement Manager
+            td James O'Brien
+            td
+              a href="mailto:procurement@bbrfc-celtic.be"  procurement@bbrfc-celtic.be
+          tr
+            td Social Events
+            td Michèle & Ruud Poppe
+            td
+              a href="mailto:events@bbrfc-celtic.be"  events@bbrfc-celtic.be        
+          tr
+            td Ambassador at Large
+            td James Parker
+            td
+              a href="mailto:ambassador-at-large@bbrfc-celtic.be"  ambassador-at-large@bbrfc-celtic.be        
+          tr
+            td 50th & 20th Anniversary
+            td Faustine Buttenshaw
+            td 
+              a href="mailto:anniversary@bbrfc-celtic.be"  anniversary@bbrfc-celtic.be
+
+      = create_heading
+
+      .media
+        .media-left.media-middle
+          a href="https://www.facebook.com/RUCKandMAUL"
+            .sponsors-rnm
+        .media-body
+
+          h4 Ruck 'n Maul
+          p
+
+            ' Our club house - Ruck 'n Maul - is located at
+
+            a href="https://www.google.nl/maps/dir/BBRFC+Celtic+Rugby+Club,+Boulevard+du+Triomphe,+Ixelles,+Belgium/Ruck+'n+Maul,+Boulevard+du+Triomphe,+Brussels,+Belgium/@50.8241759,4.3957296,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c3c4c85a52b171:0xd3506ef3c38e09d1!2m2!1d4.3944442!2d50.8233935!1m5!1m1!1s0x47c3c4ca24b5330f:0x5680385e24261fff!2m2!1d4.3993217!2d50.8235959!3e2?hl=en" Triomflaan 52, 1160 Auderghem
+
+            '  right across the street. There you will find live sports
+              (rugby), good food, free wifi, a pool table, cheap beer & a
+              friendly atmosphere. It is run by rugby players for rugby &
+              sports enthusiasts. You can check more info about it
+
+            a href="https://www.facebook.com/RUCKandMAUL" here
+
+            | .
+
+      iframe#pitch allowfullscreen="" frameborder="0" height="500px" style="border:0" width="100%"
+
+      = create_heading
+
+      p All the forms you possibly need are located here:
+
+      .well
+        ul
+          li
+            a href= file_link("registration_form") Registration form
+          li
+            a href= file_link("medical_form") Medical form
+          li
+            a href= file_link("registration_form_filled") Registration form filled in
+          li
+            a href= file_link("medical_form_filled") Medical form filled in
+          li
+            a href= file_link("injury_claim_form") Injury claim form (Dutch)
+
+      = create_heading
+
+      ul.fa-ul
+        li
+          i.fa.fa-li.fa-fax
+          | Fax: +32 2 415 9400
+        li
+          i.fa.fa-li.fa-legal
+          | Company No.: 0859.668.438
+        li
+          i.fa.fa-li.fa-money
+          | KBC Bank account No.: 735-0368845-39
+          ul
+            li IBAN: BE13 7350 3688 4539
+            li BIC: KREDBEBB
+        li
+          i.fa.fa-li.fa-photo
+          ' Logo (in several formats):
+        .btn-group
+          a.btn.btn-default href="/assets/static/logo.ai" role="button" AI
+          a.btn.btn-default href="/assets/static/logo.eps" role="button" EPS
+          a.btn.btn-default href="/assets/static/logo.svg" role="button" SVG
+          a.btn.btn-default href="/assets/static/logo.pdf" role="button" PDF
+          a.btn.btn-default.btn-info href="/assets/static/logo.png" role="button" PNG
