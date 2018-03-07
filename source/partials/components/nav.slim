@@ -29,7 +29,16 @@ nav.navbar.navbar-inverse.navbar-fixed-top
             = nav_link 'Safety & Equipment', '/school/safety-equipment/'
             li
               = link_to('Newsletters (PDF)', 'https://drive.google.com/folderview?id=0B-ML5JJtGXOIQ3VhVjhBaGNoa0U&usp=sharing', :target => "_blank")
-        = nav_link 'Anniversary', '/anniversary/'
+        li.dropdown
+          a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+            | Anniversary
+            i.fa.fa-caret-down
+          ul.dropdown-menu
+            li.dropdown-header 50<sup>th</sup> & 20<sup>th</sup> Anniversary
+            = nav_link 'About', '/anniversary/about/'
+            = nav_link 'Anniversary Ball', '/anniversary/ball/'
+            = nav_link 'Weekend Activities', '/anniversary/weekend_activities/'
+            = nav_link 'Payment', '/anniversary/payments/'       
         = nav_link 'Contact', '/contact/'
         li.dropdown
           a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
