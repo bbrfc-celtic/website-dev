@@ -32,9 +32,6 @@ headings:
 
       h4 Saturday, 30<sup>th</sup> June 2018
       
-      <img src="/assets/img/anniversary/Ball 2.jpg" alt="Ball" height=300>
-      <br>
-      
       = create_heading
       
       h4 Hôtel de la Poste, Brussels
@@ -125,7 +122,7 @@ headings:
               
               
       p
-        | <a class="btn btn-primary" href="/anniversary/weekend_activities">Make a weekend of it</a>
+        | <a class="btn btn-primary" href="https://bbrfc-celtic.be/anniversary/weekend_activities">Make a weekend of it</a>
             
       .panel.panel-warning
         .panel-heading
@@ -141,3 +138,4 @@ headings:
 
             |   (anniversary@bbrfc-celtic.be) for details.
       
+    

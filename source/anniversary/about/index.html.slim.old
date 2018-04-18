@@ -12,7 +12,7 @@ headings:
 = partial "components/nav"
 .container
   .row
-  
+
     = create_nav
     
     .col-md-9.col-xs-12
@@ -53,11 +53,6 @@ headings:
       p
         | Please see the agenda below and register for the various activities that take
           place over Friday 29/06/2018 and Saturday 30/06/2018 ASAP!
-          
-          
-          
-      <img src="/assets/img/anniversary/Ball 1.jpg" alt="Ball" height=300>
-      <br><br>
                 
       p
         | <a class="btn btn-success btn-lg" href="/anniversary/ball/" role="button">Take me to the ball!</a>
@@ -99,6 +94,7 @@ headings:
             dt 19:00 - Late  :
             dd <strong> THE MAIN EVENT! </strong>
             dd BBRFC Celtic 50 + 20 Anniversary Ball - More info <a href="/anniversary/ball">here</a>
+
 
     
 css:
