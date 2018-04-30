@@ -244,7 +244,7 @@ DEPENDENCIES
   slim
   tzinfo-data
   uglifier
-  wdm (~> 0.1.0)
+  wdm
 
 BUNDLED WITH
    1.16.1
