@@ -1,7 +1,7 @@
 <h1 align="center"> BBRFC Celtic Website Dev </h1>
 
 <a href="https://travis-ci.org/bbrfc-celtic/website-dev" target="_blank"><img src="https://travis-ci.org/bbrfc-celtic/website-dev.svg?branch=master" alt="Build Status" /></a> 
-[![Coverage Status](https://img.shields.io/repos/github/Mixone-FinallyHere/website-dev/badge.svg?branch=master)](https://coveralls.io/github/Mixone-FinallyHere/website-dev?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Mixone-FinallyHere/website-dev/badge.svg?branch=master)](https://coveralls.io/github/Mixone-FinallyHere/website-dev?branch=master)
 
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
