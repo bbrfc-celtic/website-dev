@@ -7,12 +7,7 @@ rvm:
 bundler_args: --path gems
 cache: bundler
 
-install:
-  - ./travis-tool.sh github_package jimhester/covr
- 
- 
-after_success:
-  - Rscript -e 'covr::coveralls
+
 
 before_script:
   - git config --global user.name ${GH_NAME}
