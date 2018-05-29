@@ -2,6 +2,7 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
+gem 'coveralls', require: false
 # gem "therubyracer"
 gem "rake", "~> 11.1.2"
 gem 'middleman', '~> 3.4.1'
