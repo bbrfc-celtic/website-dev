@@ -3,6 +3,9 @@
 # Compass
 ###
 
+require 'coveralls'
+Coveralls.wear!
+
 # Change Compass configuration
 compass_config do |config|
   config.output_style = :compact
