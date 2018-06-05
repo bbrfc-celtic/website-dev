@@ -26,7 +26,8 @@ gem "wdm", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 
-gem "bootstrap-sass", :require => false
+gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass', '~> 3.1.1'
 gem "font-awesome-sass", :require => false
 gem "jquery-rails", :require => false
 gem "backstretch-rails", :require => false
