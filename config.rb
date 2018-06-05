@@ -117,10 +117,10 @@ configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
 
-  activate :minify_html
+  # activate :minify_html
   # Minify Javascript on build
-  activate :minify_javascript, :inline => true
-  set :js_compressor, Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+  # activate :minify_javascript, :inline => true
+  set :js_compressor, Uglifier.new(:mangle => false, :output => {:comments => :none})
 
   set :url_root, 'http://bbrfc-celtic.be'
   activate :search_engine_sitemap, default_change_frequency: 'weekly', exclude_if: ->(resource) {
