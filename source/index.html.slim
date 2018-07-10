@@ -140,8 +140,8 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
               td -
               td -
               td.orange-bg Orange
-              
-.lightbox
+            
+/.lightbox
   .iframeContainer
     <div class="toolbarLB" onclick="lightBoxClose()">
       <span class="closeLB" > X </span>
@@ -163,8 +163,7 @@ description: BBRFC Celtic Rugby Club Home Page. Mens & Womens XVs rugby, Touch, 
       h4 TICKETS ON SALE NOW VIA BANK TRANSFER
       
       h5 More details can be found on our <a href="/anniversary/ball/">Anniversary</a> page.
-
-css:
+  css:
     .lightbox {
       position: fixed;
       top: 0;
@@ -199,7 +198,7 @@ css:
       display: none;
     }
     
-javascript:
+  javascript:
   function rC(nam) {
     var tC = document.cookie.split('; ');
     for (var i = tC.length - 1; i >= 0; i--) {
@@ -209,11 +208,11 @@ javascript:
     return '~';
   }
 
-  function writeCookie(nam, val) {
+/  function writeCookie(nam, val) {
     document.cookie = nam + '=' + escape(val);
   }
 
-  function lookupCookie(nam, pg) {
+/  function lookupCookie(nam, pg) {
     var val = rC(nam);
     if (val.indexOf('~' + pg + '~') != -1) return false;
     val += pg + '~';
@@ -221,11 +220,11 @@ javascript:
     return true;
   }
 
-  function firstTime(cookieName) {
+/  function firstTime(cookieName) {
     return lookupCookie('firstTimeCookie', cookieName);
   }
 
-  function thisPage() {
+/  function thisPage() {
     var page = location.href.substring(location.href.lastIndexOf('\/') + 1);
     pos = page.indexOf('.');
     if (pos > -1) {
@@ -238,7 +237,7 @@ javascript:
     document.querySelector(".lightbox").classList.add("closed");
   }
 
-  function init() {
+/  function init() {
     if (firstTime(thisPage())) {
       // this code only runs for first visit
       document.querySelector(".lightbox").classList.remove("closed");
@@ -249,3 +248,4 @@ javascript:
   
   init();
   document.querySelector(".lightbox").classList.remove("closed");
+/
