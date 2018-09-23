@@ -119,7 +119,7 @@ configure :build do
   # activate :minify_javascript, :inline => true
   set :js_compressor, Uglifier.new(:mangle => false, :output => {:comments => :none})
 
-  set :url_root, 'http://bbrfc-celtic.be'
+  set :url_root, 'http://bbrfcceltic.eu'
   activate :search_engine_sitemap, default_change_frequency: 'weekly', exclude_if: ->(resource) {
     resource.url.include? 'partial'
   }
